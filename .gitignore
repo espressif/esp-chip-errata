@@ -146,3 +146,6 @@ _build/
 
 .vale/styles/Vocab/*
 !.vale/styles/Vocab/Espressif/
+
+#scripts repo generated when performing checks with pre-commit hook
+scripts

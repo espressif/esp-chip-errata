@@ -209,3 +209,18 @@ translate_updated:
     - echo $CI_COMMIT_REF_NAME
     - python3 ./auto-translate/translate_rst_files.py $OPENAI_API_KEY $GITLAB_URL $TRANS_BOT_TOKEN $PROJECT_ID $CI_COMMIT_REF_NAME -a
     - echo "Translation completed"
+
+# check_format:
+#   stage: check
+#   image: $ESP_DOCS_ENV_IMAGE
+#   tags:  [host_test]
+#   rules:
+#     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'  # Run for all changes to a merge request's source branch
+#     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH       # Run for all changes to the default branch
+#   script:
+#     - git clone -b new_check_format $SCRIPTS_REPO
+#     - python3 tools/check_rst_format_mr_files.py
+#   variables:
+#       GIT_STRATEGY: fetch
+#       GIT_DEPTH: 0
+#       allow_failure: true
