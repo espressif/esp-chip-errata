@@ -1,0 +1,15 @@
+# False positives in resources.txt
+
+Check Chinese you ['您'] in file:resources.rst, language:zh_CN on line:- ESP32 论坛 – 工程师对工程师 (E2E) 的社区，您可以在这里提出问题、解决问题、分享知识、探索观点。 |br|
+╰─-------------> ['您']  on  line 27 in file esp-chip-errata/docs/zh_CN/resources.rst
+
+Check Chinese you ['您'] in file:resources.rst, language:zh_CN on line:- ESP Product Selector（乐鑫产品选型工具）– 通过筛选性能参数、进行产品对比快速定位您所需要的产品。 |br|
+╰─-------------> ['您']  on  line 43 in file esp-chip-errata/docs/zh_CN/resources.rst
+
+# False positives in main text
+
+Check spaces ['[时钟'] in file:clock-rc-fast-clk-inaccurate.rst, language:zh_CN on line:[时钟] RC_FAST_CLK 时钟无法校准
+╰─-------------> ['[时钟']  on  line 1 in file esp-chip-errata/docs/zh_CN/03-errata-description/shared/clock-rc-fast-clk-inaccurate.rst
+
+Check spaces ['[复位'] in file:reset-rwdt-reset.rst, language:zh_CN on line:[复位] RTC 看门狗定时器触发的系统复位记录错误
+╰─-------------> ['[复位']  on  line 1 in file esp-chip-errata/docs/zh_CN/03-errata-description/esp32c6/reset-rwdt-reset.rst

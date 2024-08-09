@@ -16,9 +16,9 @@
 Description
 ^^^^^^^^^^^
 
-In {IDF_TARGET_NAME}’s RMT module, if the continuous TX mode is enabled, it is expected that the data transmission stops after the data is sent for RMT_TX_LOOP_NUM_CHn rounds, and after that, the signal level in idle state should be controlled by the “level” field of the end-marker.
+In {IDF_TARGET_NAME}'s RMT module, if the continuous TX mode is enabled, it is expected that the data transmission stops after the data is sent for RMT_TX_LOOP_NUM_CHn rounds, and after that, the signal level in idle state should be controlled by the "level" field of the end-marker.
 
-However, in real situation, after the data transmission stops, the channel’s idle state signal level is not controlled by the “level” field of the end-marker, but by the level in the data wrapped back, which is indeterminate.
+However, in real situation, after the data transmission stops, the channel's idle state signal level is not controlled by the "level" field of the end-marker, but by the level in the data wrapped back, which is indeterminate.
 
 Workarounds
 ^^^^^^^^^^^

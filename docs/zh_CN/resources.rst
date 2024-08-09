@@ -40,13 +40,13 @@
   https://espressif.com/zh-hans/products/modules?id={IDF_TARGET_NAME}
 - {IDF_TARGET_NAME} 系列开发板 – {IDF_TARGET_NAME} 全系列开发板。 |br|
   https://espressif.com/zh-hans/products/devkits?id={IDF_TARGET_NAME}
-- ESP Product Selector(乐鑫产品选型工具)– 通过筛选性能参数、进行产品对比快速定位您所需要的产品。 |br|
+- ESP Product Selector（乐鑫产品选型工具）– 通过筛选性能参数、进行产品对比快速定位您所需要的产品。 |br|
   https://products.espressif.com/#/product-selector
 
 联系我们
 --------
 
-- 商务问题、技术支持、电路原理图 & PCB 设计审阅、购买样品(线上商店)、成为供应商、意见与建议 |br|
+- 商务问题、技术支持、电路原理图 & PCB 设计审阅、购买样品（线上商店）、成为供应商、意见与建议 |br|
   https://espressif.com/zh-hans/contact-us/sales-questions
 
 .. only:: html

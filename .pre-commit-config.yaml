@@ -1,0 +1,10 @@
+repos:
+-   repo: local
+    hooks:
+    - id: check-rst-format
+      name: Check rst format
+      entry: check_docs_modules/check_rst_format.sh
+      files: \.rst$
+      language: system
+      pass_filenames: True
+      verbose: True

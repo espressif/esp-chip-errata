@@ -65,7 +65,7 @@ Additional Identification Methods
 Date Code
 +++++++++
 
-Some errors in the chip product don’t need to be fixed at the silicon level, or in other words in a new chip revision.
+Some errors in the chip product don't need to be fixed at the silicon level, or in other words in a new chip revision.
 
 In this case, the chip may be identified by **Date Code** in chip marking (see :ref:`fig-chip-marking`). For more information, please refer to `Espressif Chip Packaging Information <https://www.espressif.com/sites/default/files/documentation/espressif_chip_packaging_information_en.pdf>`__.
 
