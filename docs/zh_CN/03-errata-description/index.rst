@@ -86,3 +86,16 @@
             shared/cpu-load-store
             shared/clock-rc-fast-clk-inaccurate
             {IDF_TARGET_PATH_NAME}/adc1-unavailable-channel-4
+
+.. only:: esp32c2
+
+    .. only:: html
+
+        .. include:: {IDF_TARGET_PATH_NAME}/crystal-40mhz-not-work.rst
+
+    .. only:: latex
+
+        .. toctree::
+            :hidden:
+
+            {IDF_TARGET_PATH_NAME}/crystal-40mhz-not-work
