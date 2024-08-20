@@ -22,6 +22,12 @@
 
    如需阅读其他芯片的勘误表，请在页面左上方的下拉菜单中选择目标芯片。
 
+.. only:: esp32c2
+
+    .. important::
+
+        {IDF_TARGET_NAME} 芯片当前仅有 ESP8684 一个系列，因此本文中出现的 {IDF_TARGET_NAME} 指的就是 ESP8684 系列芯片。
+
 .. toctree::
    :caption: {IDF_TARGET_NAME} 系列芯片勘误表
    :hidden:

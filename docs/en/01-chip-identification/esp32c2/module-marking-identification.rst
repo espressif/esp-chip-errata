@@ -4,13 +4,13 @@
     :align: center
 
     * - Chip Revision
-      - Specification Identifier \ :sup:`1`
+      - Specification Identifier
     * - v0.0
-      - --
+      - --- \ :sup:`1`
     * - v1.0
       - ``XA`` XXXX
     * - v1.1
       - ``XB`` XXXX
 
 
-  \ :sup:`1` – means modules with this chip revision are not mass produced.
+  \ :sup:`1` Missing specification identifier "—" means modules with this chip revision are not mass produced.

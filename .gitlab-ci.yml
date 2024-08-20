@@ -105,8 +105,6 @@ post_links:
   tags: [deploy_docs]
   image: $ESP_DOCS_ENV_IMAGE
   needs:
-    # - build_errata_html
-    # - build_errata_pdf
     - deploy_docs_preview
   rules:
     # Run for all changes to a merge request's source branch
@@ -116,25 +114,25 @@ post_links:
     - ls -al logs
     - python3 post-mr-note.py $GITLAB_MR_NOTE_TOKEN $CI_PROJECT_PATH $CI_MERGE_REQUEST_IID --url $GITLAB_URL
 
-# deploy_docs_production:
-#   extends:
-#     - .deploy_docs_template
-#   only:
-#     - master
-#   variables:
-#     TYPE: "production"
-#     DOCS_BUILD_DIR: "${CI_PROJECT_DIR}/docs/_build/"
-#     DOCS_DEPLOY_PRIVATEKEY: "$DOCS_PROD_DEPLOY_KEY"
-#     DOCS_DEPLOY_SERVER: "$DOCS_PROD_SERVER"
-#     DOCS_DEPLOY_SERVER_USER: "$DOCS_PROD_SERVER_USER"
-#     DOCS_DEPLOY_PATH: "$DOCS_PROD_PATH"
-#     DOCS_DEPLOY_URL_BASE: "https://docs.espressif.com/projects/esp-chip-errata"
-#   script:
-#     - source ${CI_PROJECT_DIR}/ci/utils.sh
-#     - add_doc_server_ssh_keys $DOCS_DEPLOY_PRIVATEKEY $DOCS_DEPLOY_SERVER $DOCS_DEPLOY_SERVER_USER
-#     - export GIT_VER=$(git describe --always)
-#     - pip install -r ${CI_PROJECT_DIR}/docs/requirements.txt
-#     - deploy-docs
+deploy_docs_production:
+  extends:
+    - .deploy_docs_template
+  only:
+    - master
+  variables:
+    TYPE: "production"
+    DOCS_BUILD_DIR: "${CI_PROJECT_DIR}/docs/_build/"
+    DOCS_DEPLOY_PRIVATEKEY: "$DOCS_PROD_DEPLOY_KEY"
+    DOCS_DEPLOY_SERVER: "$DOCS_PROD_SERVER"
+    DOCS_DEPLOY_SERVER_USER: "$DOCS_PROD_SERVER_USER"
+    DOCS_DEPLOY_PATH: "$DOCS_PROD_PATH"
+    DOCS_DEPLOY_URL_BASE: "https://docs.espressif.com/projects/esp-chip-errata"
+  script:
+    - source ${CI_PROJECT_DIR}/ci/utils.sh
+    - add_doc_server_ssh_keys $DOCS_DEPLOY_PRIVATEKEY $DOCS_DEPLOY_SERVER $DOCS_DEPLOY_SERVER_USER
+    - export GIT_VER=$(git describe --always)
+    - pip install -r ${CI_PROJECT_DIR}/docs/requirements.txt
+    - deploy-docs
 
 check_doc_links:
   stage: check
