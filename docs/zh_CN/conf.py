@@ -40,7 +40,7 @@ tags_page_title = "芯片版本"
 tags_page_header = "已知错误"
 
 # Document version number
-version_num = {'esp32c3': '版本 v1.1', 'esp32c6': '版本 v1.1', 'esp32s2': '版本 v1.1', 'esp32s3': '版本 v1.2', 'esp32h2': '版本 v0.5', 'esp32': '版本 v2.7', 'esp32c2': '版本 v1.1'}
+version_num = {'esp32c3': '版本 v1.1', 'esp32c6': '版本 v1.1', 'esp32s2': '版本 v1.2', 'esp32s3': '版本 v1.2', 'esp32h2': '版本 v0.5', 'esp32': '版本 v2.7', 'esp32c2': '版本 v1.1'}
 
 # Table, figure, and section numbering configurations
 numfig_format = {

@@ -31,6 +31,7 @@ ESP32S3_DOCS = ['01-chip-identification/esp32s3/*.rst',
                 '03-errata-description/shared/sar-adc-adc2-not-work.rst',
                 '03-errata-description/shared/rmt-idle-level-cannot-be-controlled.rst',
                 '03-errata-description/shared/tchsen-scan-done-int-raw-data-undefined.rst',
+                '03-errata-description/shared/rtc-reg-read-error-from-light-sleep.rst',
                 'revision-history/esp32s3-revision-history.rst',
                 ]
 ESP32C6_DOCS = ['01-chip-identification/esp32c6/*.rst',
@@ -44,6 +45,8 @@ ESP32C6_DOCS = ['01-chip-identification/esp32c6/*.rst',
 ESP32S2_DOCS = ['01-chip-identification/esp32s2/*.rst',
                 '02-errata-summary/esp32s2-errata-summary.rst',
                 '03-errata-description/esp32s2/*.rst',
+                '03-errata-description/shared/tchsen-scan-done-int-raw-data-undefined.rst',
+                '03-errata-description/shared/rtc-reg-read-error-from-light-sleep.rst',
                 'revision-history/esp32s2-revision-history.rst',
                 ]
 ESP32H2_DOCS = ['01-chip-identification/esp32h2/*.rst',
@@ -121,7 +124,7 @@ with open('../_static/titlepage.tex') as f:
 preamble_extra = r'''
 % ToC
 \makeatletter
-\renewcommand{\l@section}[2]{\vspace{14pt}\@dottedtocline{2}{0pt}{30pt}{\LARGE\bfseries\textcolor{LochmaraColor}{#1}}{#2}} 
+\renewcommand{\l@section}[2]{\vspace{14pt}\@dottedtocline{2}{0pt}{30pt}{\LARGE\bfseries\textcolor{LochmaraColor}{#1}}{#2}}
 \renewcommand{\l@subsection}[2]{\@dottedtocline{2}{0pt}{30pt}{\textcolor{LochmaraColor}{#1}}{#2}}
 \renewcommand{\@dotsep}{10000}
 \makeatother

@@ -7,6 +7,12 @@
 
       v0.0, v0.1, v0.2
 
+.. only:: esp32s2
+
+   .. tags::
+
+      v0.0, v1.0
+
 Description
 ^^^^^^^^^^^
 
@@ -17,7 +23,9 @@ Workarounds
 
 Users are suggested not to power down RTC peripherals in Light-sleep mode. There will be no impact on power consumption.
 
-This issue has been bypassed in ESP-IDF v4.4 and above.
+.. only:: esp32s3
+
+   This issue has been bypassed in ESP-IDF v4.4 and above.
 
 Solution
 ^^^^^^^^
