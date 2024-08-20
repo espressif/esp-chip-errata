@@ -12,7 +12,7 @@
           - 新增章节 *其他标识方式*
        - :doc:`/03-errata-description/index`
           - 调整章节顺序
-          - 新增章节 :doc:`/03-errata-description/esp32s3/rtc-reg-read-error-from-light-sleep`
+          - 新增章节 :doc:`/03-errata-description/shared/rtc-reg-read-error-from-light-sleep`
           - 新增章节 :doc:`/03-errata-description/esp32s3/lcd-equ-sysclk-issue`
           - 新增章节 :doc:`/03-errata-description/shared/rmt-idle-level-cannot-be-controlled`
           - 新增章节 :doc:`/03-errata-description/shared/tchsen-scan-done-int-raw-data-undefined`

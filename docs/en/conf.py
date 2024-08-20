@@ -40,7 +40,7 @@ tags_page_title = "Chip Revision"
 tags_page_header = "Known Errors"
 
 # Document version number
-version_num = {'esp32c3': 'Version 1.1', 'esp32c6': 'Version 1.1', 'esp32s2': 'Version 1.1', 'esp32s3': 'Version 1.2', 'esp32h2': 'Version 0.5', 'esp32': 'Version 2.7', 'esp32c2': 'Version 1.1'}
+version_num = {'esp32c3': 'Version 1.1', 'esp32c6': 'Version 1.1', 'esp32s2': 'Version 1.2', 'esp32s3': 'Version 1.2', 'esp32h2': 'Version 0.5', 'esp32': 'Version 2.7', 'esp32c2': 'Version 1.1'}
 
 # Table, figure, and section numbering configurations
 numfig_format = {

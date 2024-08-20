@@ -49,7 +49,7 @@
 
     .. only:: html
 
-        .. include:: {IDF_TARGET_PATH_NAME}/rtc-reg-read-error-from-light-sleep.rst
+        .. include:: shared/rtc-reg-read-error-from-light-sleep.rst
         .. include:: {IDF_TARGET_PATH_NAME}/analog-power-config-might-damage-chip.rst
         .. include:: {IDF_TARGET_PATH_NAME}/lcd-equ-sysclk-issue.rst
         .. include:: {IDF_TARGET_PATH_NAME}/usb-otg-download-func-bug.rst
@@ -62,7 +62,7 @@
         .. toctree::
             :hidden:
 
-            {IDF_TARGET_PATH_NAME}/rtc-reg-read-error-from-light-sleep
+            shared/rtc-reg-read-error-from-light-sleep
             {IDF_TARGET_PATH_NAME}/analog-power-config-might-damage-chip
             {IDF_TARGET_PATH_NAME}/lcd-equ-sysclk-issue
             {IDF_TARGET_PATH_NAME}/usb-otg-download-func-bug
@@ -99,3 +99,33 @@
             :hidden:
 
             {IDF_TARGET_PATH_NAME}/crystal-40mhz-not-work
+
+
+.. only:: esp32s2
+
+    .. only:: html
+
+        .. include:: {IDF_TARGET_PATH_NAME}/system-current-leakage-at-pins.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/system-random-flash-download-failure.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/rtc-i2c-abnormal-chip-reset.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/spi-stuck-after-soft-restart.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/usb-otg-abnormal-data-ahb-arbitration.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/sar-adc-bit1-no-flip.rst
+        .. include:: shared/rtc-reg-read-error-from-light-sleep.rst
+        .. include:: shared/tchsen-scan-done-int-raw-data-undefined.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/tchsen-scan-done-int-occurs-twice.rst
+
+    .. only:: latex
+
+        .. toctree::
+            :hidden:
+
+            {IDF_TARGET_PATH_NAME}/system-current-leakage-at-pins
+            {IDF_TARGET_PATH_NAME}/system-random-flash-download-failure
+            {IDF_TARGET_PATH_NAME}/rtc-i2c-abnormal-chip-reset
+            {IDF_TARGET_PATH_NAME}/spi-stuck-after-soft-restart
+            {IDF_TARGET_PATH_NAME}/usb-otg-abnormal-data-ahb-arbitration
+            {IDF_TARGET_PATH_NAME}/sar-adc-bit1-no-flip
+            shared/rtc-reg-read-error-from-light-sleep
+            shared/tchsen-scan-done-int-raw-data-undefined
+            {IDF_TARGET_PATH_NAME}/tchsen-scan-done-int-occurs-twice

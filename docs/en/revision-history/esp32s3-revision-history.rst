@@ -8,11 +8,11 @@
    * - 2023-11-15
      - v1.2
      - - :doc:`/01-chip-identification/index`
-          - Added information about how to identify chip revisions in modules 
+          - Added information about how to identify chip revisions in modules
           - Added Section *Additional Identification Methods*
        - :doc:`/03-errata-description/index`
           - Adjusted the section order
-          - Added Section :doc:`/03-errata-description/esp32s3/rtc-reg-read-error-from-light-sleep`
+          - Added Section :doc:`/03-errata-description/shared/rtc-reg-read-error-from-light-sleep`
           - Added Section :doc:`/03-errata-description/esp32s3/lcd-equ-sysclk-issue`
           - Added Section :doc:`/03-errata-description/shared/rmt-idle-level-cannot-be-controlled`
           - Added Section :doc:`/03-errata-description/shared/tchsen-scan-done-int-raw-data-undefined`

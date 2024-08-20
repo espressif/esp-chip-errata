@@ -9,7 +9,7 @@
      - v0.1
      - v0.2
    * - RTC
-     - :doc:`/03-errata-description/esp32s3/rtc-reg-read-error-from-light-sleep`
+     - :doc:`/03-errata-description/shared/rtc-reg-read-error-from-light-sleep`
      - Y
      - Y
      - Y
