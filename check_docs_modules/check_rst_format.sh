@@ -15,19 +15,32 @@ else
   git clone -b new_check_format "$SCRIPTS_REPO"
 fi
 
-LANG=""
+# Initialize variables
+EN_FILES=()
+ZH_CN_FILES=()
 
 # Inspect each file passed to the script
 for file in "$@"; do
   if echo "$file" | grep -q "en/"; then
-    LANG="en"
-    break
+    EN_FILES+=("$file")
   elif echo "$file" | grep -q "zh_CN/"; then
-    LANG="zh_CN"
-    break
+    ZH_CN_FILES+=("$file")
   fi
 done
 
-echo "Start checking the rst format for file(s) '$@'."
+# Process English files if any
+if [ ${#EN_FILES[@]} -gt 0 ]; then
+  echo "Start checking the rst format for English file(s): ${EN_FILES[*]}"
+  python3 scripts/check_docs_format.py "en" "${EN_FILES[@]}"
+fi
 
-python3 scripts/check_docs_format.py "$LANG" "$@"
+# Process Chinese files if any
+if [ ${#ZH_CN_FILES[@]} -gt 0 ]; then
+  echo "Start checking the rst format for Chinese file(s): ${ZH_CN_FILES[*]}"
+  python3 scripts/check_docs_format.py "zh_CN" "${ZH_CN_FILES[@]}"
+fi
+
+# Handle case where no files matched
+if [ ${#EN_FILES[@]} -eq 0 ] && [ ${#ZH_CN_FILES[@]} -eq 0 ]; then
+  echo "No matching files found in 'en/' or 'zh_CN/' folders."
+fi
