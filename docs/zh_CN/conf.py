@@ -30,7 +30,7 @@ pdf_title = u'系列芯片勘误表'
 # for a list of supported languages.
 language = 'zh_CN'
 
-doc_id = {'esp32': '3710', 'esp32s2': '5546', 'esp32s3': '6255', 'esp32c2': '6707', 'esp32c3': '6335', 'esp32c6': '7167', 'esp32h2': '7121'}
+doc_id = {'esp32s2': '5546', 'esp32s3': '6255', 'esp32c2': '6707', 'esp32c3': '6335', 'esp32c6': '7167', 'esp32h2': '7121'}
 
 # Configuration for sphinx_tags
 tags_overview_title = "各芯片版本的已知错误"
@@ -40,7 +40,7 @@ tags_page_title = "芯片版本"
 tags_page_header = "已知错误"
 
 # Document version number
-version_num = {'esp32c3': '版本 v1.1', 'esp32c6': '版本 v1.1', 'esp32s2': '版本 v1.2', 'esp32s3': '版本 v1.2', 'esp32h2': '版本 v0.5', 'esp32': '版本 v2.7', 'esp32c2': '版本 v1.1'}
+version_num = {'esp32c3': '版本 v1.1', 'esp32c6': '版本 v1.1', 'esp32s2': '版本 v1.2', 'esp32s3': '版本 v1.2', 'esp32h2': '版本 v0.5', 'esp32c2': '版本 v1.1'}
 
 # Table, figure, and section numbering configurations
 numfig_format = {

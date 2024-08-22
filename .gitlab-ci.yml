@@ -12,12 +12,12 @@ variables:
 .build_template:
   stage: build
   image: $ESP_DOCS_ENV_IMAGE
-  tags: 
+  tags:
     - build
   parallel:
     matrix:
       - DOCLANG: ["en", "zh_CN"]
-        DOCTGT: ["esp32", "esp32s3", "esp32c6", "esp32h2", "esp32c2", "esp32s2", "esp32c3"]
+        DOCTGT: ["esp32s3", "esp32c6", "esp32h2", "esp32c2", "esp32s2", "esp32c3"]
 
 build_errata_html:
   extends:
@@ -154,7 +154,7 @@ check_doc_links:
   parallel:
     matrix:
       - DOCLANG: ["en", "zh_CN"]
-        DOCTGT: ["esp32", "esp32s2", "esp32s3", "esp32c3", "esp32c6", "esp32h2", "esp32c2"]
+        DOCTGT: ["esp32s2", "esp32s3", "esp32c3", "esp32c6", "esp32h2", "esp32c2"]
 
 check_line_num:
   image: python:3.8
