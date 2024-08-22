@@ -30,7 +30,7 @@ pdf_title = u' Series SoC Errata '
 # for a list of supported languages.
 language = 'en'
 
-doc_id = {'esp32': '3709', 'esp32s2': '5545', 'esp32s3': '6121', 'esp32c2': '6705', 'esp32c3': '6333', 'esp32c6': '7165', 'esp32h2': '7119'}
+doc_id = {'esp32s2': '5545', 'esp32s3': '6121', 'esp32c2': '6705', 'esp32c3': '6333', 'esp32c6': '7165', 'esp32h2': '7119'}
 
 # Configuration for sphinx_tags
 tags_overview_title = "Errata Descriptions by Chip Revisions"
@@ -40,7 +40,7 @@ tags_page_title = "Chip Revision"
 tags_page_header = "Known Errors"
 
 # Document version number
-version_num = {'esp32c3': 'Version 1.1', 'esp32c6': 'Version 1.1', 'esp32s2': 'Version 1.2', 'esp32s3': 'Version 1.2', 'esp32h2': 'Version 0.5', 'esp32': 'Version 2.7', 'esp32c2': 'Version 1.1'}
+version_num = {'esp32c3': 'Version 1.1', 'esp32c6': 'Version 1.1', 'esp32s2': 'Version 1.2', 'esp32s3': 'Version 1.2', 'esp32h2': 'Version 0.5', 'esp32c2': 'Version 1.1'}
 
 # Table, figure, and section numbering configurations
 numfig_format = {
