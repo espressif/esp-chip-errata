@@ -1,0 +1,37 @@
+# This document specifies owners for each chip errata.
+# Chip owners are code owners and backup chip owners are backup code owners.
+# For more CODEOWNERS examples and use cases, see https://docs.gitlab.com/ee/user/project/codeowners/reference.html
+
+# Chip specific content                                         Owners
+/docs/*/*/esp32/                                                @documentation/codeowners/esp32
+/docs/*/02-errata-summary/esp32-errata-summary.rst              @documentation/codeowners/esp32
+/docs/*/revision-history/esp32-revision-history.rst             @documentation/codeowners/esp32
+/docs/*/*/esp32s2/                                              @documentation/codeowners/esp32s2
+/docs/*/02-errata-summary/esp32s2-errata-summary.rst            @documentation/codeowners/esp32s2
+/docs/*/revision-history/esp32s2-revision-history.rst           @documentation/codeowners/esp32s2
+/docs/*/*/esp32c3/                                              @documentation/codeowners/esp32c3
+/docs/*/02-errata-summary/esp32c3-errata-summary.rst            @documentation/codeowners/esp32c3
+/docs/*/revision-history/esp32c3-revision-history.rst           @documentation/codeowners/esp32c3
+/docs/*/*/esp32s3/                                              @documentation/codeowners/esp32s3
+/docs/*/02-errata-summary/esp32s3-errata-summary.rst            @documentation/codeowners/esp32s3
+/docs/*/revision-history/esp32s3-revision-history.rst           @documentation/codeowners/esp32s3
+/docs/*/*/esp32c2/                                              @documentation/codeowners/esp32c2
+/docs/*/02-errata-summary/esp32c2-errata-summary.rst            @documentation/codeowners/esp32c2
+/docs/*/revision-history/esp32c2-revision-history.rst           @documentation/codeowners/esp32c2
+/docs/*/*/esp32c6/                                              @documentation/codeowners/esp32c6
+/docs/*/02-errata-summary/esp32c6-errata-summary.rst            @documentation/codeowners/esp32c6
+/docs/*/revision-history/esp32c6-revision-history.rst           @documentation/codeowners/esp32c6
+/docs/*/*/esp32h2/                                              @documentation/codeowners/esp32h2
+/docs/*/02-errata-summary/esp32h2-errata-summary.rst            @documentation/codeowners/esp32h2
+/docs/*/revision-history/esp32h2-revision-history.rst           @documentation/codeowners/esp32h2
+
+# Shared content                                                Owners
+/docs/_static/
+/docs/**/index.rst
+/docs/*/resources.rst
+/docs/*/03-errata-description/shared/
+
+# Config                                                        Owners
+/**/*.py
+/**/*.sh
+/**/*.yml
