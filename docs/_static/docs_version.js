@@ -11,3 +11,7 @@ var DOCUMENTATION_VERSIONS = {
        { text: "ESP32-C2", value: "esp32c2"},
     ]
   };
+
+if (DOCUMENTATION_OPTIONS.LANGUAGE === 'zh-CN') {
+    DOCUMENTATION_OPTIONS.LANGUAGE = 'zh_CN';
+}
