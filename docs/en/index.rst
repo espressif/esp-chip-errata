@@ -22,6 +22,12 @@
 
    To switch to another chip, use the drop-down menu at the top left of the page.
 
+.. only:: esp32c2
+
+    .. important::
+
+        The {IDF_TARGET_NAME} SoC currently consists of only one series, the ESP8684, so the references of {IDF_TARGET_NAME} in this document refers to the ESP8684 Series SoCs.
+
 .. toctree::
    :caption: {IDF_TARGET_NAME} Series SoC Errata
    :hidden:

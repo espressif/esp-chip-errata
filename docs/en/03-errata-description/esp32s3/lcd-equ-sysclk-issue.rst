@@ -17,29 +17,29 @@ Description
 
 2. When the I8080 format is used, if the clock cycle of the LCD core clock (LCD_CLK) before data transmission is less than or equal to 2, it can result in incorrect value of the first data and the subsequent data quantity.
 
-.. note::
+  .. note::
 
-  Please refer to the following steps to obtain the clock cycle before data transmission with the I8080 format.
+    Please refer to the following steps to obtain the clock cycle before data transmission with the I8080 format.
 
-  The clock cycle before data transmission depends on the following factors:
+    The clock cycle before data transmission depends on the following factors:
 
-  - VFK cycle length (unit: LCD_PCLK): The clock cycle length during the VFK phase
-  - CMD cycle length (unit: LCD_PCLK): The clock cycle length during the CMD phase
-  - DUMMY cycle length (unit: LCD_PCLK): The clock cycle length during the DUMMY phase
-  - LCD_CAM_LCD_CLK_EQU_SYSCLK: Decides if LCD_PCLK equals LCD_CLK
-  - LCD_CAM_LCD_CLKCNT_N: Decides the division relationship between LCD_PCLK and LCD_CLK
+    - VFK cycle length (unit: LCD_PCLK): The clock cycle length during the VFK phase
+    - CMD cycle length (unit: LCD_PCLK): The clock cycle length during the CMD phase
+    - DUMMY cycle length (unit: LCD_PCLK): The clock cycle length during the DUMMY phase
+    - LCD_CAM_LCD_CLK_EQU_SYSCLK: Decides if LCD_PCLK equals LCD_CLK
+    - LCD_CAM_LCD_CLKCNT_N: Decides the division relationship between LCD_PCLK and LCD_CLK
 
-  Based on the information above, three variables are defined below:
+    Based on the information above, three variables are defined below:
 
-  - **total_pixel** = VFK cycle length + CMD cycle length + DUMMY cycle length
-  - **cycle_unit** =
+    - **total_pixels** = VFK cycle length + CMD cycle length + DUMMY cycle length
+    - **cycle_unit** =
 
-    - 1, if LCD_CAM_LCD_CLK_EQU_SYSCLK = 1
-    - LCD_CAM_LCD_CLKCNT_N + 1, if LCD_CAM_LCD_CLK_EQU_SYSCLK = 0
+      - 1, if LCD_CAM_LCD_CLK_EQU_SYSCLK = 1
+      - LCD_CAM_LCD_CLKCNT_N + 1, if LCD_CAM_LCD_CLK_EQU_SYSCLK = 0
 
-  - **ahead_cycle** = **total_pixel** * **cycle_unit**
+    - **ahead_cycle** = **total_pixels** * **cycle_unit**
 
-  **ahead_cycle** indicates the clock cycle before data transmission, which, if less than or equal to 2, will cause an error.
+    **ahead_cycle** indicates the clock cycle before data transmission, which, if less than or equal to 2, will cause an error.
 
 Workarounds
 ^^^^^^^^^^^

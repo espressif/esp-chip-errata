@@ -17,29 +17,29 @@
 
 2. 使用 I8080 格式时，如果数据传输前 LCD_CLK 的时钟周期小于或等于 2，则可能导致第一个数据和后续数据量不准确。
 
-.. note::
+  .. note::
 
-  请参考下文获取 I8080 格式下数据传输前的时钟周期。
+    请参考下文获取 I8080 格式下数据传输前的时钟周期。
 
-  数据传输前的时钟周期取决于以下因素：
+    数据传输前的时钟周期取决于以下因素：
 
-  - VFK 周期长度（单位：LCD_PCLK）：VFK 阶段的时钟周期长度
-  - CMD 周期长度（单位：LCD_PCLK）：CMD 阶段的时钟周期长度
-  - DUMMY 周期长度（单位：LCD_PCLK）：DUMMY 阶段的时钟周期长度
-  - LCD_CAM_LCD_CLK_EQU_SYSCLK：配置 LCD_PCLK 是否等于 LCD_CLK
-  - LCD_CAM_LCD_CLKCNT_N：决定 LCD_PCLK 和 LCD_CLK 之间的分频关系
+    - VFK 周期长度（单位：LCD_PCLK）：VFK 阶段的时钟周期长度
+    - CMD 周期长度（单位：LCD_PCLK）：CMD 阶段的时钟周期长度
+    - DUMMY 周期长度（单位：LCD_PCLK）：DUMMY 阶段的时钟周期长度
+    - LCD_CAM_LCD_CLK_EQU_SYSCLK：配置 LCD_PCLK 是否等于 LCD_CLK
+    - LCD_CAM_LCD_CLKCNT_N：决定 LCD_PCLK 和 LCD_CLK 之间的分频关系
 
-  基于上述信息，我们定义以下三个变量：
+    基于上述信息，我们定义以下三个变量：
 
-  - **total_pixel** = VFK 周期长度 + CMD 周期长度 + DUMMY 周期长度
-  - **cycle_unit** =
+    - **total_pixels** = VFK 周期长度 + CMD 周期长度 + DUMMY 周期长度
+    - **cycle_unit** =
 
-    - 1（LCD_CAM_LCD_CLK_EQU_SYSCLK = 1 时）
-    - LCD_CAM_LCD_CLKCNT_N + 1（LCD_CAM_LCD_CLK_EQU_SYSCLK = 0 时）
+      - 1（LCD_CAM_LCD_CLK_EQU_SYSCLK = 1 时）
+      - LCD_CAM_LCD_CLKCNT_N + 1（LCD_CAM_LCD_CLK_EQU_SYSCLK = 0 时）
 
-  - **ahead_cycle** = **total_pixel** * **cycle_unit**
+    - **ahead_cycle** = **total_pixels** * **cycle_unit**
 
-  **ahead_cycle** 即为数据传输前的时钟周期，若该值小于或等于 2，则会产生错误。
+    **ahead_cycle** 即为数据传输前的时钟周期，若该值小于或等于 2，则会产生错误。
 
 变通方法
 ^^^^^^^^
