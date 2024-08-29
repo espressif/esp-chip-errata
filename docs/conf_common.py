@@ -86,8 +86,8 @@ pdf_file_prefix = u'esp-chip-errata'
 # disable the check for link anchors
 linkcheck_anchors = False
 
-# Measurement ID for Google Analytics
-google_analytics_id = ''
+# Tracing ID for Google Analytics
+google_analytics_id = 'G-EEZFY8D6CS'
 
 # Configuration for sphinx_tags
 tags_create_tags = True
