@@ -8,7 +8,7 @@ variables:
   # Versioned esp-idf-doc env image to use for all document building jobs
   ESP_DOCS_ENV_IMAGE: "$CI_DOCKER_REGISTRY/esp-idf-doc-env-v5.4:1-1"
   ESP_DOCS_PATH: "$CI_PROJECT_DIR"
-  DOCTGT: "esp32s3 esp32c6 esp32h2 esp32c2 esp32s2 esp32c3 esp32"
+  DOCTGT: "esp32s3 esp32c6 esp32h2 esp32c2 esp32s2 esp32c3 esp32 esp32p4"
   DOCLANG: "en zh_CN"
 
 
@@ -290,6 +290,7 @@ deploy_docs_production:
     paths:
       - 'logs/*.yml'
     expire_in: 1 week
+  allow_failure: true
 
 publish_to_cdp_qa_with_dmf_files:
   needs:

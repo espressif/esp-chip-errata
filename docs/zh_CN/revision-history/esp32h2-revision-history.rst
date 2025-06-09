@@ -6,6 +6,9 @@
    * - 日期
      - 版本
      - 发布说明
+   * - 2025-07-08
+     - v1.1
+     - 更新章节 :doc:`/03-errata-description/shared/i2c-fail-in-multiple-reads-operation`
    * - 2025-03-06
      - v1.0
      - 新增芯片版本 v1.2

@@ -34,7 +34,7 @@
      -
    * - I2C
      - I2C-308
-     - :doc:`../03-errata-description/esp32h2/i2c-fail-in-multiple-reads-operation`
+     - :doc:`../03-errata-description/shared/i2c-fail-in-multiple-reads-operation`
      - Y
      - Y
      -

@@ -28,43 +28,54 @@ eFuse Bits
 
     The chip revision is encoded using two eFuse fields:
 
-    .. include:: ./{IDF_TARGET_PATH_NAME}/efuse-field-identification.rst
-
 .. only:: esp32
 
     The chip revision is encoded using four eFuse fields:
 
-    .. include:: ./{IDF_TARGET_PATH_NAME}/efuse-field-identification.rst
+.. include:: ./{IDF_TARGET_PATH_NAME}/efuse-field-identification.rst
+
+.. _sec-chip-marking:
 
 Chip Marking
 ++++++++++++
 
 -  **Espressif Tracking Information** line in chip marking
 
-.. _fig-chip-marking:
+.. only:: not esp32p4
 
-.. figure:: ../../_static/chip-marking.png
-    :align: center
-    :scale: 32%
-    :alt: Chip Marking Diagram
+    .. figure:: ../../_static/chip-marking.png
+        :align: center
+        :scale: 32%
+        :alt: Chip Marking Diagram
 
-    Chip Marking Diagram
+        Chip Marking Diagram
+
+.. only:: esp32p4
+
+    .. figure:: ../../_static/chip-marking-p4.png
+        :align: center
+        :scale: 55%
+        :alt: Chip Marking Diagram
+
+        Chip Marking Diagram
 
 .. include:: ./{IDF_TARGET_PATH_NAME}/chip-marking-identification.rst
 
-Module Marking
-++++++++++++++
+.. only:: not esp32p4
 
-- **Specification Identifier** line in module marking
+    Module Marking
+    ++++++++++++++
 
-  .. figure:: ../../_static/module-marking__EN.png
-      :align: center
-      :scale: 55%
-      :alt: Module Marking Diagram
+    - **Specification Identifier** line in module marking
 
-      Module Marking Diagram
+      .. figure:: ../../_static/module-marking__EN.png
+          :align: center
+          :scale: 55%
+          :alt: Module Marking Diagram
 
-.. include:: ./{IDF_TARGET_PATH_NAME}/module-marking-identification.rst
+          Module Marking Diagram
+
+    .. include:: ./{IDF_TARGET_PATH_NAME}/module-marking-identification.rst
 
 
 Additional Identification Methods
@@ -75,26 +86,27 @@ Date Code
 
 Some errors in the chip product don't need to be fixed at the silicon level, or in other words in a new chip revision.
 
-In this case, the chip may be identified by **Date Code** in chip marking (see :ref:`fig-chip-marking`). For more information, please refer to `{IDF_TARGET_NAME} Chip Packaging Information > Chip Silk Marking <https://docs.espressif.com/projects/esp-packaging/en/latest/{IDF_TARGET_PATH_NAME}/01-marking/index_chip.html#chip-silk-marking>`__.
+In this case, the chip may be identified by **Date Code** in chip marking (see :ref:`sec-chip-marking`). For more information, please refer to `{IDF_TARGET_NAME} Chip Packaging Information > Chip Silk Marking <https://docs.espressif.com/projects/esp-packaging/en/latest/{IDF_TARGET_PATH_NAME}/01-marking/index_chip.html#chip-silk-marking>`__.
 
+.. only:: not esp32p4
 
-PW Number
-+++++++++
+    PW Number
+    +++++++++
 
-Modules built around the chip may be identified by **PW Number** in product label (see :ref:`fig-PW-number`). For more information, please refer to `{IDF_TARGET_NAME} Module Packaging Information > Pizza Box <https://docs.espressif.com/projects/esp-packaging/en/latest/{IDF_TARGET_PATH_NAME}/03-tape-and-reel/index_module.html#pizza-box>`__.
+    Modules built around the chip may be identified by **PW Number** in product label (see :ref:`fig-PW-number`). For more information, please refer to `{IDF_TARGET_NAME} Module Packaging Information > Pizza Box <https://docs.espressif.com/projects/esp-packaging/en/latest/{IDF_TARGET_PATH_NAME}/03-tape-and-reel/index_module.html#pizza-box>`__.
 
-.. _fig-PW-number:
+    .. _fig-PW-number:
 
-.. figure:: ../../_static/PW-number.png
-    :align: center
-    :scale: 37%
-    :alt: Module Product Label
+    .. figure:: ../../_static/PW-number.png
+        :align: center
+        :scale: 37%
+        :alt: Module Product Label
 
-    Module Product Label
+        Module Product Label
 
-.. note::
+    .. note::
 
-  Please note that **PW Number** is only provided for reels packaged in aluminum moisture barrier bags (MBB).
+        Please note that **PW Number** is only provided for reels packaged in aluminum moisture barrier bags (MBB).
 
 
 ESP-IDF Release Compatibility

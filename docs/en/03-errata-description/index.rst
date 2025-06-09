@@ -82,7 +82,7 @@ All Errata Descriptions
         .. include:: ./shared/clock-rc-fast-clk-inaccurate.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/adc1-unavailable-channel-4.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/sar-adc-missing-lower-four-bits.rst
-        .. include:: ./{IDF_TARGET_PATH_NAME}/i2c-fail-in-multiple-reads-operation.rst
+        .. include:: ./shared/i2c-fail-in-multiple-reads-operation.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/spi-auto-suspend.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/ledc-unable-to-rearch-100%-duty-cycle.rst    
         .. include:: ./shared/rmt-idle-level-cannot-be-controlled.rst
@@ -101,7 +101,7 @@ All Errata Descriptions
             shared/clock-rc-fast-clk-inaccurate
             {IDF_TARGET_PATH_NAME}/adc1-unavailable-channel-4
             {IDF_TARGET_PATH_NAME}/sar-adc-missing-lower-four-bits
-            ./{IDF_TARGET_PATH_NAME}/i2c-fail-in-multiple-reads-operation.rst
+            ./shared/i2c-fail-in-multiple-reads-operation.rst
             ./{IDF_TARGET_PATH_NAME}/spi-auto-suspend.rst
             ./{IDF_TARGET_PATH_NAME}/ledc-unable-to-rearch-100%-duty-cycle.rst
             ./shared/rmt-idle-level-cannot-be-controlled.rst
@@ -228,3 +228,18 @@ All Errata Descriptions
             {IDF_TARGET_PATH_NAME}/twai-tec-value-not-increased
             {IDF_TARGET_PATH_NAME}/twai-transmit-interrupt-lost
             {IDF_TARGET_PATH_NAME}/ledc-duty-overflow-error
+
+.. only:: esp32p4
+
+    .. only:: html
+
+        .. include:: shared/rmt-idle-level-cannot-be-controlled.rst
+        .. include:: shared/i2c-fail-in-multiple-reads-operation.rst
+
+    .. only:: latex
+
+        .. toctree::
+            :hidden:
+
+            shared/rmt-idle-level-cannot-be-controlled
+            shared/i2c-fail-in-multiple-reads-operation

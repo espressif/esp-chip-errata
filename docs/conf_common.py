@@ -5,7 +5,7 @@ import yaml
 
 languages = ['en', 'zh_CN']
 
-idf_targets = ['esp32s2', 'esp32s3', 'esp32c3', 'esp32c6', 'esp32h2', 'esp32c2', 'esp32']
+idf_targets = ['esp32s2', 'esp32s3', 'esp32c3', 'esp32c6', 'esp32h2', 'esp32c2', 'esp32', 'esp32p4']
 
 # Map idf_target to chip_series in lbcf.yml
 idf_target_to_chip_series = {
@@ -16,6 +16,7 @@ idf_target_to_chip_series = {
     "esp32c3": "ESP32-C3",
     "esp32c6": "ESP32-C6",
     "esp32h2": "ESP32-H2",
+    "esp32p4": "ESP32-P4",
 }
 
 extensions += ['sphinx_copybutton',
@@ -68,6 +69,7 @@ ESP32H2_DOCS = ['01-chip-identification/esp32h2/*.rst',
                 '03-errata-description/esp32h2/*.rst',
                 '03-errata-description/shared/clock-rc-fast-clk-inaccurate.rst',
                 '03-errata-description/shared/rmt-idle-level-cannot-be-controlled.rst',
+                '03-errata-description/shared/i2c-fail-in-multiple-reads-operation.rst',
                 '03-errata-description/shared/cpu-load-store.rst',
                 'revision-history/esp32h2-revision-history.rst',
                 ]
@@ -77,6 +79,13 @@ ESP32_DOCS = ['01-chip-identification/esp32/*.rst',
               '03-errata-description/shared/rtc-reg-read-error-from-light-sleep.rst',
               'revision-history/esp32-revision-history.rst',
               ]
+ESP32P4_DOCS = ['01-chip-identification/esp32p4/*.rst',
+                '02-errata-summary/esp32p4-errata-summary.rst',
+                '03-errata-description/esp32p4/*.rst',
+                '03-errata-description/shared/rmt-idle-level-cannot-be-controlled.rst',
+                '03-errata-description/shared/i2c-fail-in-multiple-reads-operation.rst',
+                'revision-history/esp32p4-revision-history.rst',
+              ]
 
 conditional_include_dict = {'esp32c2':ESP32C2_DOCS,
                             'esp32c3':ESP32C3_DOCS,
@@ -84,7 +93,8 @@ conditional_include_dict = {'esp32c2':ESP32C2_DOCS,
                             'esp32s2':ESP32S2_DOCS,
                             'esp32s3':ESP32S3_DOCS,
                             'esp32h2':ESP32H2_DOCS,
-                            'esp32':ESP32_DOCS
+                            'esp32':ESP32_DOCS,
+                            'esp32p4':ESP32P4_DOCS
                             }
 
 # link roles config

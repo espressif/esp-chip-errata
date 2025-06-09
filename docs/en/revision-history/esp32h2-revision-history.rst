@@ -5,6 +5,9 @@
    * - Date
      - Version
      - Release Notes
+   * - 2025-07-08
+     - v1.1
+     - Updated Section :doc:`/03-errata-description/shared/i2c-fail-in-multiple-reads-operation`
    * - 2025-03-06
      - v1.0
      - Added chip revision v1.2
