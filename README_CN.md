@@ -24,11 +24,20 @@ esp-chip-errata 仓库包含以下勘误表，记录了芯片已知的错误及�
     ![按芯片版本筛选错误描述](docs/_static/filter-chip-revision-cn.png)
 
 
-## 贡献
+## 开源许可说明
 
-我们欢迎您为勘误表文档提供改进建议！
+本仓库采用多种许可协议：
+- 除 [docs/sphinx-tags.py](./docs/sphinx-tags.py) 脚本外，所有代码文件均适用 [Apache License 2.0](./LICENSE-APACHE)。
+- [docs/sphinx-tags.py](./docs/sphinx-tags.py) 脚本单独采用 [MIT License](./LICENSE-MIT)。
+- 所有文档均适用 [署名—相同方式共享 4.0 协议国际版 (CC-BY-SA 4.0)](./LICENSE-CC-BY-SA)。
 
-如发现错误描述存在问题，请随时
-- 点击 [HTML 文档页面](https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32c6/index.html) 底部的 “提交文档反馈” 图标
-- 创建 [议题](https://github.com/espressif/esp-chip-errata/issues) 
-- 创建 [拉取请求](https://github.com/espressif/esp-chip-errata/pulls)
+
+## 问题反馈与贡献指引
+
+诚邀社区开发者共同完善勘误表文档！
+
+如果发现问题或有改进建议，您可以：
+- 点击任意 [HTML 文档页面](https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32c6/index.html) 底部 “提交文档反馈” 图标留言。
+- 通过 [GitHub Issues](https://github.com/espressif/esp-chip-errata/issues) 报告问题。
+- 直接提交 [Pull Request (PR)](https://github.com/espressif/esp-chip-errata/pulls) 修复。
+    > 提交 PR 时，请遵循 [贡献指南](CONTRIBUTING.md)。

@@ -1,3 +1,5 @@
+# Modified from original source at https://github.com/melissawm/sphinx-tags
+
 """Sphinx extension to create tags for documentation pages.
 
 """
@@ -15,7 +17,7 @@ from sphinx.util.logging import getLogger
 from sphinx.util.matching import get_matching_files
 from sphinx.util.rst import textwidth
 
-__version__ = "0.4" # Customized based on sphinx-tags v0.4 https://github.com/melissawm/sphinx-tags
+__version__ = "0.4"
 
 logger = getLogger("sphinx-tags")
 

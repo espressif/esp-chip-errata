@@ -22,5 +22,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         instructions-gitlab-mirror: 'true'
+        instructions-contributions-file: 'CONTRIBUTING.md'
         instructions-cla-link: 'https://cla-assistant.io/espressif/esp-chip-errata'
         commit-messages-types: 'bugfix,docs'

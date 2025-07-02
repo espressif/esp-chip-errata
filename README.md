@@ -24,11 +24,20 @@ The key features of this repository are:
     ![Filter Errata Descriptions by Chip Revisions](docs/_static/filter-chip-revision.png)
 
 
-## Contributing
+## License
 
-We welcome contributions to the errata documentation from the community!
+This repository is distributed under multiple licenses:
+- All scripts, except [docs/sphinx-tags.py](./docs/sphinx-tags.py), are licensed under the [Apache License 2.0](./LICENSE-APACHE).
+- The [docs/sphinx-tags.py](./docs/sphinx-tags.py) script is licensed under the [MIT License](./LICENSE-MIT).
+- All documentation is licensed under the [Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA 4.0)](./LICENSE-CC-BY-SA).
 
-If you find issues with errata descriptions, feel free to
-- Click the "Provide Feedback" button at the bottom of the [HTML documentation page](https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32c6/index.html)
-- Create an [issue](https://github.com/espressif/esp-chip-errata/issues) 
-- Create a [pull request](https://github.com/espressif/esp-chip-errata/pulls)
+
+## Leave Feedback and Contribute
+
+We welcome community contributions to improve the errata documentation!
+
+If you encounter issues or have suggestions:
+- Leave a comment using the "Provide Feedback" button at the bottom of any [HTML documentation page](https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32c6/index.html).
+- Report an issue via [GitHub Issues](https://github.com/espressif/esp-chip-errata/issues).
+- Submit a fix via [pull request (PR)](https://github.com/espressif/esp-chip-errata/pulls).
+    > For PRs, follow the [contributing guidelines](CONTRIBUTING.md).
