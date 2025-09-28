@@ -1,5 +1,5 @@
-[CPU] CPU has limitations when accessing peripherals in chips
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[CPU-3.18] CPU Has Limitations When Accessing Peripherals in Chips
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 

@@ -1,5 +1,5 @@
-[CPU] The CPU crashes when the clock frequency switches
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[CPU-3.5] The CPU Crashes When the Clock Frequency Switches
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 
@@ -18,7 +18,7 @@ Workarounds
 When switching frequencies, use intermediate frequencies as follows:
 
     1. 2 MHz <-> 40 MHz <-> 80 MHz <-> 160 MHz
-    2. 2 MHz <->40 MHz <->240 MHz
+    2. 2 MHz <-> 40 MHz <-> 240 MHz
 
 Solution
 ^^^^^^^^

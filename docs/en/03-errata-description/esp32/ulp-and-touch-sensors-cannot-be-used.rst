@@ -1,4 +1,4 @@
-[ULP] ULP coprocessor and touch sensors can not be used in Deep-sleep mode if RTC_PERIPH power domain is powered up
+[ULP-3.19] ULP Coprocessor And Touch Sensors Can Not Be Used In Deep-sleep Mode If RTC_PERIPH Power Domain Is Powered Up
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32

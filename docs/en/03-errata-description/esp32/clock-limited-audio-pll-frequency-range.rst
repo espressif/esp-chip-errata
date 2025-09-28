@@ -1,5 +1,5 @@
-[Clock] Audio PLL frequency range is limited
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[CLK-3.7] Audio Pll Frequency Range Is Limited
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 

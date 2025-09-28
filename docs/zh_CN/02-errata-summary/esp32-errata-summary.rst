@@ -59,7 +59,7 @@
      -
      -
      -
-   * - ULP 协处理器
+   * - ULP
      - :doc:`/03-errata-description/esp32/ulp-and-touch-sensors-cannot-be-used`
      - Y
      - Y
@@ -152,7 +152,7 @@
      - Y
      - Y
      - Y
-   * - :rspan:`10` TWAI 控制器
+   * - :rspan:`10` TWAI
      - :doc:`/03-errata-description/esp32/twai-dominant-bit-not-interpreted-as-sof`
      - Y
      - Y

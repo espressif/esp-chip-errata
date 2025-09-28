@@ -5,6 +5,9 @@
    * - 日期
      - 版本
      - 发布说明
+   * - 2025-10-11
+     - v3.0
+     - 更新勘误标题的大小写格式和勘误编号
    * - 2025-01-03
      - v2.9
      - - 更新章节 :doc:`/03-errata-description/esp32/ulp-and-touch-sensors-cannot-be-used`

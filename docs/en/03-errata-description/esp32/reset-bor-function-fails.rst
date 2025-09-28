@@ -1,5 +1,5 @@
-[Reset] The Brown-out Reset (BOR) function does not work
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[RES-3.4] The Brown-out Reset (BOR) Function Does Not Work
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 

@@ -1,5 +1,5 @@
-[Reset] A spurious watchdog reset occurs when ESP32 is powered up or wakes up from Deep-sleep
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[RES-3.1] A Spurious Watchdog Reset Occurs When ESP32 Is Powered up or Wakes up From Deep-sleep
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 

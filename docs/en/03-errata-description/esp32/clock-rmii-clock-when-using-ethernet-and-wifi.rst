@@ -1,5 +1,5 @@
-[Clock] ESP32 cannot be used as the PHY clock source if Wi-Fi and Ethernet are used at the same time
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[CLK-3.22] ESP32 Cannot Be Used as the PHY Clock Source If Wi-fi and Ethernet Are Used at the Same Time
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 

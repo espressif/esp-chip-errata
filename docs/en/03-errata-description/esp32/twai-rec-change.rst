@@ -1,5 +1,5 @@
-[TWAI] Receive Error Counter (REC) is allowed to change whilst in reset mode or bus-off recovery
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[TWAI-3.13.1] Receive Error Counter (REC) Is Allowed to Change Whilst in Reset Mode or Bus-off Recovery
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 

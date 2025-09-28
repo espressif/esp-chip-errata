@@ -1,5 +1,5 @@
-[TWAI] Receiving an erroneous data frame can cause the data bytes of the next received data frame to be invalid
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[TWAI-3.13.5] Receiving an Erroneous Data Frame Can Cause the Data Bytes of the Next Received Data Frame to Be Invalid
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 
@@ -17,7 +17,7 @@ Workarounds
 
 Users can detect the errata triggering condition (i.e., bit or stuff error in the data or CRC field) by setting the INTERRUPT_BUS_ERR_INT_ENA and checking the ERROR_CODE_CAPTURE_REG when a bus error interrupt occurs. If the errata condition is met, the following workarounds are possible:
 
-- The TWAI controller can transmit a dummy frame with 0 data bytes to reset the controller’s internal signals. It is advisable to select an ID for the dummy frame that can be filtered out by all nodes on the TWAI bus.
+- The TWAI controller can transmit a dummy frame with 0 data bytes to reset the controller's internal signals. It is advisable to select an ID for the dummy frame that can be filtered out by all nodes on the TWAI bus.
 - Hardware reset the TWAI controller (will require saving and restoring the current register values).
 
 Solution

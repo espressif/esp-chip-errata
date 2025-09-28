@@ -1,5 +1,5 @@
-[LEDC] LEDC 递减渐变，duty 值溢出错误
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[LEDC-3.12] LEDC 递减渐变，duty 值溢出错误
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 
@@ -10,7 +10,7 @@
 描述
 ^^^^^^^^^
 
-在配置 LEDC 为递减渐变且 LEDC_DUTY_SCALE_HSCH\ *n* 为 1 的情况下，当 duty 值为 2\ :sup:`LEDC_HSTIMER\ x\ \_DUTY_RES` 时，下一次 duty 变化应该为 2\ :sup:`LEDC_HSTIMER\ x\ \_DUTY_RES` – 1，但是实际上 duty 值等于 2\ :sup:`LEDC_HSTIMER\ x\ \_DUTY_RES+1`\ ，即出现 duty 值溢出的错误。 （HSCH\ *n* 代表高速通道，\ *n* 为 0-7；HSTIMER\ *x* 代表高速定时器，\ *x* 为 0-3。）
+在配置 LEDC 为递减渐变且 LEDC_DUTY_SCALE_HSCH\ *n* 为 1 的情况下，当 duty 值为 2\ :sup:`LEDC_HSTIMER\ x\ \_DUTY_RES` 时，下一次 duty 变化应该为 2\ :sup:`LEDC_HSTIMER\ x\ \_DUTY_RES` – 1，但是实际上 duty 值等于 2\ :sup:`LEDC_HSTIMER\ x\ \_DUTY_RES+1`\ ，即出现 duty 值溢出的错误。（HSCH\ *n* 代表高速通道，\ *n* 为 0-7；HSTIMER\ *x* 代表高速定时器，\ *x* 为 0-3。）
 
 对于低速通道，存在同样的问题。
 

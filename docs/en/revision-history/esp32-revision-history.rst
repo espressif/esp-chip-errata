@@ -5,6 +5,9 @@
    * - Date
      - Version
      - Release Notes
+   * - 2025-10-11
+     - v3.0
+     - Update errata titles capitalization and errata numbering
    * - 2025-01-03
      - v2.9
      - - Updated Section :doc:`/03-errata-description/esp32/ulp-and-touch-sensors-cannot-be-used`

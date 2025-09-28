@@ -1,5 +1,5 @@
-[GPIO] For pads with both GPIO and RTC_GPIO functionality, the GPIO pull-up and pull-down configuration register fields are nonfunctional
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[GPIO-3.6] For Pads With Both GPIO and RTC_GPIO Functionality, the GPIO Pull-up and Pull-down Configuration Register Fields Are Nonfunctional
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 

@@ -1,5 +1,5 @@
-[UART] UART fifo_cnt does not indicate the data length in FIFO correctly
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[UART-3.17] UART fifo_cnt Does Not Indicate the Data Length In Fifo Correctly
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 
@@ -15,7 +15,7 @@ When software uses DPORT to read UART fifo_cnt, and such operation is interrupte
 Workarounds
 ^^^^^^^^^^^
 
-When using DPort to read fifo, calculate the real count based on the FIFO read and write offset address. For example：
+When using DPort to read fifo, calculate the real count based on the FIFO read and write offset address. For example:
 
 .. code-block::
 

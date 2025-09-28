@@ -1,5 +1,5 @@
-[LEDC] When the LEDC is in decremental fade mode, a duty overflow error may occur
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[LEDC-3.12] When the LEDC Is in Decremental Fade Mode, a Duty Overflow Error May Occur
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 

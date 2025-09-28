@@ -1,5 +1,5 @@
-[CPU] There are limitations to the CPU access to 0x3FF0_0000 ~ 0x3FF1_EFFF and 0x3FF4_0000 ~ 0x3FF7_FFFF address spaces
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[CPU-3.16] There Are Limitations to the CPU Access to 0x3ff0_0000 ~ 0x3ff1_efff and 0x3ff4_0000 ~ 0x3ff7_ffff Address Spaces
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32
 
@@ -19,7 +19,7 @@ Workarounds
 
 1. Insert "MEMW" instruction before the CPU access operation that falls in these two address spaces. That is, in C/C++, software needs to always use the "volatile" attribute when accessing registers in these two address spaces.
 
-2. When the CPU frequency is 160 MHz, add six “nop” between two consecutive FIFO reads. When the CPU frequency is 240 MHz, add seven “nop” between two consecutive FIFO reads.
+2. When the CPU frequency is 160 MHz, add six "nop" between two consecutive FIFO reads. When the CPU frequency is 240 MHz, add seven "nop" between two consecutive FIFO reads.
 
 Solution
 ^^^^^^^^
