@@ -3,7 +3,7 @@ var DOCUMENTATION_VERSIONS = {
                 supported_targets: [ "esp32" ]
               },
     VERSIONS: [
-      { name: "latest", has_targets: true, supported_targets: [ "esp32", "esp32s2", "esp32s3", "esp32c3", "esp32c6", "esp32h2", "esp32c2", "esp32p4",] },
+      { name: "latest", has_targets: true, supported_targets: [ "esp32", "esp32s2", "esp32s3", "esp32c3", "esp32c6", "esp32h2", "esp32c2", "esp32p4", "esp32c5"] },
     ],
     IDF_TARGETS: [
        { text: "ESP32", value: "esp32"},
@@ -14,6 +14,7 @@ var DOCUMENTATION_VERSIONS = {
        { text: "ESP32-H2", value: "esp32h2"},
        { text: "ESP32-C2", value: "esp32c2"},
        { text: "ESP32-P4", value: "esp32p4"},
+       { text: "ESP32-C5", value: "esp32c5"},
     ]
   };
 

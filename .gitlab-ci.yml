@@ -8,7 +8,7 @@ variables:
   # Versioned esp-idf-doc env image to use for all document building jobs
   ESP_DOCS_ENV_IMAGE: "$CI_DOCKER_REGISTRY/esp-idf-doc-env-v5.4:1-1"
   ESP_DOCS_PATH: "$CI_PROJECT_DIR"
-  DOCTGT: "esp32s3 esp32c6 esp32h2 esp32c2 esp32s2 esp32c3 esp32 esp32p4"
+  DOCTGT: "esp32s3 esp32c6 esp32h2 esp32c2 esp32s2 esp32c3 esp32 esp32p4 esp32c5"
   DOCLANG: "en zh_CN"
 
 
@@ -23,7 +23,7 @@ variables:
   allow_failure: true
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'  # Run for all changes to a merge request's source branch
-  before_script: 
+  before_script:
     - export CHANGED_FILES=$(git diff-tree --no-commit-id --name-only -r -m $CI_COMMIT_SHA)
 
 check_doc_links:
@@ -83,7 +83,7 @@ check_format:
           MATCHED_TARGETS=()
 
           echo "Checking file: $file"
-          
+
           # 1. Check the path of changed files for exact match of targets
           for target in $DOCTGT; do
               echo "Checking if target matches in file path"
@@ -133,7 +133,7 @@ check_format:
     matrix:
       - DOCLANG: ["en", "zh_CN"]
   retry: 2
-  
+
 build_errata_html:
   extends:
     - .build_template

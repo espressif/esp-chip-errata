@@ -84,7 +84,7 @@
         .. include:: ./{IDF_TARGET_PATH_NAME}/sar-adc-missing-lower-four-bits.rst
         .. include:: ./shared/i2c-fail-in-multiple-reads-operation.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/spi-auto-suspend.rst
-        .. include:: ./{IDF_TARGET_PATH_NAME}/ledc-unable-to-rearch-100%-duty-cycle.rst    
+        .. include:: ./{IDF_TARGET_PATH_NAME}/ledc-unable-to-rearch-100%-duty-cycle.rst
         .. include:: ./shared/rmt-idle-level-cannot-be-controlled.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/accidentally-enter-usb-boot-mode.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/aes-cpa-attack.rst
@@ -243,3 +243,17 @@
 
             shared/rmt-idle-level-cannot-be-controlled
             shared/i2c-fail-in-multiple-reads-operation
+
+
+.. only:: esp32c5
+
+    .. only:: html
+
+        .. include:: shared/psram-read-after-write-consistency.rst
+
+    .. only:: latex
+
+        .. toctree::
+            :hidden:
+
+            shared/psram-read-after-write-consistency

@@ -429,3 +429,55 @@ documents:
       scheduled_release_date:
       document_status: active
       document_classification: public
+########################################
+# ESP32-C5 Series SoC Errata
+########################################
+    # Common configuration for internal release and public release
+    - document_name: ESP32-C5 Series SoC Errata
+      doc_id: 9679
+      translation_docid: 9677
+      chip_series: ESP32-C5
+      product_name:
+        - ESP32-C5 SoC Series
+      product_name_old_website:
+        - ESP32-C5
+      soc_series_base_filter: ESP32-C5
+      document_type: errata # or errata, datasheet, reference, book, guide, application note
+      document_type_old_website: datasheet & errata
+      version: v1.0 # or specific version number
+      revision_date: 2025-11-05
+      language: en # or cn
+      document_storage: docs
+      document_link: https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32c5/index.html
+      document_summary: This document describes known errata in ESP32-C5 series of SoCs.
+      notify_subscribers: true # or false
+      visibility_on_website: show # or hide
+      scheduled_release_date:
+      document_status: active
+      document_classification: public
+########################################
+# ESP32-C5 系列芯片勘误表
+########################################
+    # Common configuration for internal release and public release
+    - document_name: ESP32-C5 系列芯片勘误表
+      doc_id: 9677
+      translation_docid: 9679
+      chip_series: ESP32-C5
+      product_name:
+        - ESP32-C5 SoC Series
+      product_name_old_website:
+        - ESP32-C5
+      soc_series_base_filter: ESP32-C5
+      document_type: errata # or errata, datasheet, reference, book, guide, application note
+      document_type_old_website: datasheet & errata
+      version: v1.0 # or specific version number
+      revision_date: 2025-11-05 # or generate automatically?
+      language: cn # or en
+      document_storage: docs
+      document_link: https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32c5/index.html
+      document_summary: 本文档描述了 ESP32-C5 系列芯片的已知错误。
+      notify_subscribers: true # or false
+      visibility_on_website: show # or hide
+      scheduled_release_date:
+      document_status: active
+      document_classification: public
