@@ -5,6 +5,6 @@
    * - Date
      - Version
      - Release Notes
-   * - 2025-10-xx
+   * - 2025-11-05
      - v1.0
      - First release
