@@ -7,6 +7,12 @@
 
       v0.0, v0.1, v1.0
 
+.. only:: esp32c61
+
+   .. tags::
+
+      v0.0, v0.1, v0.2, v1.0
+
 Description
 ^^^^^^^^^^^
 
@@ -39,6 +45,6 @@ Workarounds
 Solution
 ^^^^^^^^
 
-.. only:: esp32c5
+.. only:: esp32c5 or esp32c61
 
    To be fixed in the :bdg-warning:`next chip revision`.

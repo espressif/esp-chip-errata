@@ -9,7 +9,7 @@ variables:
   # Versioned esp-idf-doc env image to use for all document building jobs
   ESP_DOCS_ENV_IMAGE: "$ERRATA_DOCKER_REGISTRY"
   ESP_DOCS_PATH: "$CI_PROJECT_DIR"
-  DOCTGT: "esp32s3 esp32c6 esp32h2 esp32c2 esp32s2 esp32c3 esp32 esp32p4 esp32c5"
+  DOCTGT: "esp32s3 esp32c6 esp32h2 esp32c2 esp32s2 esp32c3 esp32 esp32p4 esp32c5 esp32c61"
   DOCLANG: "en zh_CN"
 
 include:

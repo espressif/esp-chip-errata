@@ -481,3 +481,57 @@ documents:
       scheduled_release_date:
       document_status: active
       document_classification: public
+
+
+########################################
+# ESP32-C61 Series SoC Errata
+########################################
+    # Common configuration for internal release and public release
+    - document_name: ESP32-C61 Series SoC Errata
+      doc_id: 9851
+      translation_docid: 9853
+      chip_series: ESP32-C61
+      product_name:
+        - ESP32-C61 SoC Series
+      product_name_old_website:
+        - ESP32-C61
+      soc_series_base_filter: ESP32-C61
+      document_type: errata # or errata, datasheet, reference, book, guide, application note
+      document_type_old_website: datasheet & errata
+      version: v1.0 # or specific version number
+      revision_date: 2025-11-20
+      language: en # or cn
+      document_storage: docs
+      document_link: https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32c61/index.html
+      document_summary: This document describes known errata in ESP32-C61 series of SoCs.
+      notify_subscribers: true # or false
+      visibility_on_website: show # or hide
+      scheduled_release_date:
+      document_status: active
+      document_classification: public
+########################################
+# ESP32-C61 系列芯片勘误表
+########################################
+    # Common configuration for internal release and public release
+    - document_name: ESP32-C61 系列芯片勘误表
+      doc_id: 9853
+      translation_docid: 9851
+      chip_series: ESP32-C61
+      product_name:
+        - ESP32-C61 SoC Series
+      product_name_old_website:
+        - ESP32-C61
+      soc_series_base_filter: ESP32-C61
+      document_type: errata # or errata, datasheet, reference, book, guide, application note
+      document_type_old_website: datasheet & errata
+      version: v1.0 # or specific version number
+      revision_date: 2025-11-20 # or generate automatically?
+      language: cn # or en
+      document_storage: docs
+      document_link: https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32c61/index.html
+      document_summary: 本文档描述了 ESP32-C61 系列芯片的已知错误。
+      notify_subscribers: true # or false
+      visibility_on_website: show # or hide
+      scheduled_release_date:
+      document_status: active
+      document_classification: public

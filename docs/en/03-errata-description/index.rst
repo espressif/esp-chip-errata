@@ -256,3 +256,17 @@ All Errata Descriptions
             :hidden:
 
             shared/psram-read-after-write-consistency
+
+.. only:: esp32c61
+
+    .. only:: html
+
+        .. include:: shared/psram-read-after-write-consistency.rst
+
+    .. only:: latex
+
+        .. toctree::
+            :hidden:
+
+            shared/psram-read-after-write-consistency
+

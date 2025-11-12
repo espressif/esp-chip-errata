@@ -39,7 +39,7 @@ eFuse Bits
 Chip Marking
 ++++++++++++
 
-.. only:: not esp32p4 and not esp32c5
+.. only:: not esp32p4 and not esp32c5 and not esp32c61
 
     -  **Espressif Tracking Information** line in chip marking
 
@@ -50,7 +50,7 @@ Chip Marking
 
         Chip Marking Diagram
 
-.. only:: esp32p4 or esp32c5
+.. only:: esp32p4 or esp32c5 or esp32c61
 
     -  **Manufacturing Code** line in chip marking
 
