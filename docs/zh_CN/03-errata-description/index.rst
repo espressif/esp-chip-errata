@@ -265,6 +265,9 @@
     .. only:: html
 
         .. include:: shared/psram-read-after-write-consistency.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/internal-sram-corruption-after-dppd-power-down.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/huk-unavailable.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/flash-manual-encryption-failure.rst
 
     .. only:: latex
 
@@ -272,6 +275,9 @@
             :hidden:
 
             shared/psram-read-after-write-consistency
+            {IDF_TARGET_PATH_NAME}/internal-sram-corruption-after-dppd-power-down
+            {IDF_TARGET_PATH_NAME}/huk-unavailable
+            {IDF_TARGET_PATH_NAME}/flash-manual-encryption-failure
 
 
 .. only:: esp32c61

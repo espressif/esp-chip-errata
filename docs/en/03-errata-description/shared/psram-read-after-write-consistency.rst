@@ -45,6 +45,10 @@ Workarounds
 Solution
 ^^^^^^^^
 
-.. only:: esp32c5 or esp32c61
+.. only:: esp32c5
+
+   Fixed in chip revision :bdg-success:`v1.2`.
+
+.. only:: esp32c61
 
    To be fixed in the :bdg-warning:`next chip revision`.

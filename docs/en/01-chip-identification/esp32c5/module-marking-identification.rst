@@ -11,3 +11,5 @@
         - ``MB`` XXXX
       * - v1.0
         - ``MC`` XXXX
+      * - v1.2
+        - ``MD`` XXXX

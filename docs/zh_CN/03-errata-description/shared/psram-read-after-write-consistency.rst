@@ -43,6 +43,10 @@ MSPI 硬件负责管理 CPU 对 PSRAM 的读写请求，并且内部存在缓存
 解决方案
 ^^^^^^^^
 
-.. only:: esp32c5 or esp32c61
+.. only:: esp32c5
+
+   已在芯片版本 :bdg-success:`v1.2` 中修复。
+
+.. only:: esp32c61
 
    预计将在 :bdg-warning:`下个芯片版本` 中修复。
