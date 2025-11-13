@@ -29,7 +29,7 @@ Workarounds
 
 During a cache write-back, it is recommended that users take the following precautions at the same time:
 
-- Disable interrupts on the current CPU, and re-enable them only after the cache write-back has completed.  
+- Disable interrupts on the current CPU, and re-enable them only after the cache write-back has completed.
 - Enable the cache freeze feature to stop another CPU from accessing the cache.
 
 This issue has been automatically bypassed using the above methods in ESP-IDF v4.4.6+, v5.0.4+, v5.1.1+, v5.2, and above versions.

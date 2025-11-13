@@ -63,7 +63,7 @@ class PythonGitlabNotes():
                         chip_series = lang_chip[1]
                     if len(lang_chip) == 3:
                         language = 'zh_CN'
-                        chip_series = lang_chip[2]      
+                        chip_series = lang_chip[2]
 
                     # Construct new URL replacing 'index.html'
                     if "index.html" in desc_url:
@@ -71,7 +71,7 @@ class PythonGitlabNotes():
                             "index.html",
                             f"esp-chip-errata-{language}-master-{chip_series}.pdf"
                         )
-                        
+
                         if 'pdf' in pdf_url:
                             if chip_series in series_links_pdf:
                                 language_links = series_links_pdf[chip_series]
@@ -87,10 +87,10 @@ class PythonGitlabNotes():
                             else:
                                 language_links = {language: desc_url}
                             series_links_html[chip_series] = language_links
-        
+
         self.series_links_html = series_links_html
         self.series_links_pdf = series_links_pdf
-        
+
         # Debugging lines
         print("HTML Links:", series_links_html)
         print("PDF Links:", series_links_pdf)

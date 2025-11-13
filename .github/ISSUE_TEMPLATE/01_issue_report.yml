@@ -1,7 +1,7 @@
 name: Issue report
 description: Report incorrect or confusing descriptions, typos, grammar errors, formatting issues, etc.
 labels: ['Type: Issue']
-body: 
+body:
   - type: dropdown
     id: document_name
     attributes:

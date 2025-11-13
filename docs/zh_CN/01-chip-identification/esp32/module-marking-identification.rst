@@ -6,7 +6,7 @@
       * - 芯片版本
         - 规格标识码
       * - v0.0
-        - XXXXXX   \ :sup:`1` 
+        - XXXXXX   \ :sup:`1`
       * - v1.0
         - XXXXXX
       * - v1.1

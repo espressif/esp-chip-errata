@@ -175,6 +175,23 @@ preamble_extra = r'''
 
 % Make text left-aligned
 \raggedright
+
+% Fallback for CJK characters
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans Mono CJK SC}
+
+% Font settings
+\setmainfont {MaisonNeue-Light}[
+  UprightFont = MaisonNeue-Light,
+  ItalicFont = MaisonNeue-LightItalic,
+  BoldFont = MaisonNeue-Medium,
+]
+
+\setmonofont{MaisonNeueMono-Regular}
+
+\setsansfont{MaisonNeue-Light}
 '''
 
 # LaTeX Figure alignment
@@ -208,6 +225,9 @@ latex_toplevel_sectioning = 'section'
 
 # Configure latex table style
 latex_table_style = ['colorrows']
+
+# Use xindy to prepare index
+latex_use_xindy = True
 
 # Set the path of the logo \sphinxlogo used in the titlepage
 latex_logo = '../_static/esp-logo-standard-vertical.pdf'

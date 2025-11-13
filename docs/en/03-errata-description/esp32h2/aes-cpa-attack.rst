@@ -4,7 +4,7 @@
 .. only:: esp32h2
 
    .. tags::
-      
+
       v0.0, v0.1
 
 Description
@@ -15,7 +15,7 @@ The chip's Flash Encryption is based on XTS-AES. Flash Encryption as well as Sec
 Workarounds
 ^^^^^^^^^^^
 
-Long lived encryption keys that are common between the devices or manufacturing batch should be avoided at all costs. 
+Long lived encryption keys that are common between the devices or manufacturing batch should be avoided at all costs.
 
 Enable Flash Encryption and Secure Boot at the same time, which can minimize the risk of attacker rewriting with the firmware.
 

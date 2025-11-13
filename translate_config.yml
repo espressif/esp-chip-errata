@@ -1,12 +1,12 @@
-specified_files:  
+specified_files:
   - docs/zh_CN/02-errata-summary/esp32c6-errata-summary.rst
   - docs/zh_CN/03-errata-description/esp32c6/clock-rc32k-not-oscillate.rst
   - docs/zh_CN/03-errata-description/index.rst
   - docs/zh_CN/revision-history/esp32c6-revision-history.rst
-  
+
 target_language: EN-CN
-  
-trans_dict:  
+
+trans_dict:
   pin: 管脚
 
 target_language_folder: ./

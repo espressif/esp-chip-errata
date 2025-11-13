@@ -15,4 +15,3 @@
       - X ``C`` XXXXXXXX
     * - v2.0
       - X ``D`` XXXXXXXX
-

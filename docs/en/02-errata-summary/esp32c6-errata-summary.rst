@@ -19,8 +19,8 @@
      - CLK-6996
      - :doc:`/03-errata-description/shared/clock-rc-fast-clk-inaccurate`
      - Y
-     - 
-     - 
+     -
+     -
    * - CLK-8588
      - :doc:`/03-errata-description/esp32c6/clock-rc32k-not-oscillate`
      - Y
@@ -30,8 +30,8 @@
      - RES-7080
      - :doc:`/03-errata-description/esp32c6/reset-rwdt-reset`
      - Y
-     - 
-     - 
+     -
+     -
    * - SPI
      - SPI-304
      - :doc:`/03-errata-description/esp32c6/spi-auto-suspend`
@@ -49,12 +49,12 @@
      - :doc:`/03-errata-description/esp32c6/sar-adc-access-dma`
      - Y
      - Y
-     - 
+     -
    * - ADC-1477
      - :doc:`/03-errata-description/esp32c6/sar-adc-missing-lower-four-bits`
      - Y
      - Y
-     - 
+     -
    * - Wi-Fi
      - WIFI-9686
      - :doc:`/03-errata-description/esp32c6/wifi-ftm`

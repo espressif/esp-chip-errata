@@ -1,4 +1,4 @@
-[GPIO-3.11] When Certain Rtc Peripherals Are Powered on, the Inputs of GPIO36 and GPIO39 Will Be Pulled Down for Approximately 80 ns
+[GPIO-3.11] When Certain RTC Peripherals Are Powered on, the Inputs of GPIO36 and GPIO39 Will Be Pulled Down for Approximately 80 ns
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. only:: esp32

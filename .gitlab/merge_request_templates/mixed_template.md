@@ -1,7 +1,7 @@
 <!-- This template states what should be included in what way in your MR for each specific kind branches (feature/docs/bugfix).-->
 
 
-<!-- For a "feature/" branch, provide a detailed description of the changes made in the MR and the related errata release plan or schedule. Also include reasons behind the changes and other considerations that reviewers should know, if any. --> 
+<!-- For a "feature/" branch, provide a detailed description of the changes made in the MR and the related errata release plan or schedule. Also include reasons behind the changes and other considerations that reviewers should know, if any. -->
 <!-- For a "docs/" branch, provide a detailed description of the code changes made in the MR and the reasons behind. Also include reasons other considerations that reviewers should know, if any. -->
 <!-- For a "bugfix/" branch, provide a detailed description to help reviewers understand the issue, its cause, impact, and the proposed solution. -->
 
@@ -25,21 +25,21 @@ _Add descriptions right here and remove the italics formatting._ <!-- Mandatory 
 * [ ] All required approvers have been added to the `Reviewer` tab.
 * [ ] Select `Mark as draft` if the MR is still a work in progress or click `Mark as ready` if the MR is ready to be merged.
 * [ ] The branch is up to date with the master branch or has been rebased to master before merge.
-* [ ] All required files in the [Chip Errata Checklist](https://espressifsystems.sharepoint.com/:x:/r/sites/Documentation/_layouts/15/Doc.aspx?sourcedoc=%7B82FC5D11-52C0-41D0-A2C8-AB04A82A47B4%7D&file=Chip%20Errata%20Checklist%20and%20Workflow-v1.0.xlsx&action=default&mobileredirect=true) have been updated.
+* [ ] All required files in the Chip Errata Checklist (see repo Wiki) have been updated.
 
 
 ## Related <!-- Optional -->
 
 * Mention related DOC Jira tasks to make sure they get updated, e.g., "- Closes DOC-0000"
-* Mention related DIG Jira tasks labeled with `Errata` to indicate what bugs are documented, e.g., "- Documents DIG-000" 
+* Mention related DIG Jira tasks labeled with `Errata` to indicate what bugs are documented, e.g., "- Documents DIG-000"
 * Mention other related MRs or links, if any
 
 
 ## Release Notes <!-- Optional -->
 
 <!-- Changes made in this MR relevant to developers, mostly for "feature/" branches, should be listed in this section using the past tense.-->
-<!-- Remove this section if there are only minor changes in this MR, mostly for "docs/" and "bugfix/" branches.--> 
-<!-- Below are some examples.--> 
+<!-- Remove this section if there are only minor changes in this MR, mostly for "docs/" and "bugfix/" branches.-->
+<!-- Below are some examples.-->
 
 * Added the bug "Chip will be damaged when BIAS_SLEEP = 0 and PD_CUR = 1" to ESP32-S3 Errata
 * Updated descriptions for the bug "The USB-OTG Download function is unavailable" in ESP32-S3 Errata

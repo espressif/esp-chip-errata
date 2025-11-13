@@ -13,3 +13,12 @@ Check spaces ['[时钟'] in file:clock-rc-fast-clk-inaccurate.rst, language:zh_C
 
 Check spaces ['[复位'] in file:reset-rwdt-reset.rst, language:zh_CN on line:[复位] RTC 看门狗定时器触发的系统复位记录错误
 ╰─-------------> ['[复位']  on  line 1 in file esp-chip-errata/docs/zh_CN/03-errata-description/esp32c6/reset-rwdt-reset.rst
+
+These title words should be capitalized ['fifo_cnt'] in file:uart-fifo-cnt-indicates-data-length-incorrectly.rst, language:en on line:[UART-3.17] UART fifo_cnt Does Not Indicate the Data Length In Fifo Correctly
+╰─-------------> ['fifo_cnt']  on  line 1 in file docs/en/03-errata-description/esp32/uart-fifo-cnt-indicates-data-length-incorrectly.rst
+
+These title words should be capitalized ['during'] in file:system-current-leakage-at-pins.rst, language:en on line:[SYSTEM-86] Leakage Current at the VDDA and VDD3P3_RTC Pins during Shutdown
+╰─-------------> ['during']  on  line 1 in file docs/en/03-errata-description/esp32s2/system-current-leakage-at-pins.rst
+
+These title words should be capitalized ['on,', 'ns'] in file:gpio-inputs-pulled-down.rst, language:en on line:[GPIO-3.11] When Certain RTC Peripherals Are Powered on, the Inputs of GPIO36 and GPIO39 Will Be Pulled Down for Approximately 80 ns
+╰─-------------> ['on,', 'ns']  on  line 1 in file docs/en/03-errata-description/esp32/gpio-inputs-pulled-down.rst

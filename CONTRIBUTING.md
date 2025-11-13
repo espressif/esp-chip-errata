@@ -27,14 +27,14 @@ We welcome contributions to the `.rst` files in the `docs/` directory!
 
     - `bugfix`: Fix typos, grammar, formatting error, broken links, missing translations, or other minor issues.
     - `docs`: Add new or update existing content.
-    
+
     `[optional scope]` is the affected chip.
 
     For example:
 
     ```
     bugfix(esp32): fix a typo in the chip marking identification file
-    ``` 
+    ```
 
 4. Create a pull request with your changes.
 

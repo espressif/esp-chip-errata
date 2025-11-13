@@ -44,7 +44,7 @@ Description
 Workarounds
 ^^^^^^^^^^^
 
-Users are suggested to do the followings:
+Users are suggested to do the following:
 
 - When using the RGB format, avoid configuring LCD_CAM_LCD_CLK_EQU_SYSCLK as 1.
 - When using the I8080 format:

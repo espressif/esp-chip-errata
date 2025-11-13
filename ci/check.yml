@@ -1,0 +1,47 @@
+.check_template:
+  stage: check
+  image: $ESP_DOCS_ENV_IMAGE
+  tags: [check_doc_links]
+  variables:
+    DOCS_DIR: $CI_PROJECT_DIR/docs
+    GIT_STRATEGY: fetch
+    GIT_DEPTH: 0
+  allow_failure: true
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'  # Run for all changes to a merge request's source branch
+  before_script:
+    - export CHANGED_FILES=$(git diff-tree --no-commit-id --name-only -r -m $CI_COMMIT_SHA)
+
+
+### Check if doc links are valid
+
+check_doc_links:
+  extends:
+    - .check_template
+  script:
+    - cd docs
+    - cd $DOCS_DIR
+    - pip install -r requirements.txt
+    - for lang in $DOCLANG; do
+        for target in $DOCTGT; do
+          build-docs -t $target -l $lang linkcheck;
+        done
+      done
+
+
+### Check if pre-commit hooks for RST formatting and spelling errors pass
+
+check_pre_commit:
+  extends:
+    - .check_template
+  script:
+    - pip install pre-commit
+    # Fetch target branch latest commit
+    - |
+      echo "$CHANGED_FILES"
+
+      if [ -n "$CHANGED_FILES" ]; then
+          CI=true pre-commit run --files $CHANGED_FILES
+      else
+          echo "No files to check."
+      fi

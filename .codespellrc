@@ -1,0 +1,4 @@
+[codespell]
+skip = out,*.drawio,*.svg,*.eps,*.pdf,**/archive/**
+ignore-words-list = EMAC,emac,DOUT,dout,Dout,OEN,pre-emptive,AFE,ser,rsource,hart,Hart,te,CIPH,SHS,FPR,ontrol
+write-changes = true

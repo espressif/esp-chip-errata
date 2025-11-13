@@ -1,0 +1,148 @@
+.deploy_docs_template:
+  stage: deploy
+  image: $ESP_DOCS_ENV_IMAGE
+  tags:
+    - deploy
+  needs:
+    - build_errata_html
+    - build_errata_pdf
+
+deploy_docs_preview:
+  extends:
+    - .deploy_docs_template
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'  # Run for all changes to a merge request's source branch
+      changes:
+        - "docs/**/*"
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event' && ($CI_MERGE_REQUEST_LABELS =~ /^(?:[^,\n\r]+,)*build(?:,[^,\n\r]+)*$/i)  # Run if a merge request has build label
+  variables:
+    TYPE: "preview"
+    DOCS_BUILD_DIR: "${CI_PROJECT_DIR}/docs/_build/"
+    DOCS_DEPLOY_PRIVATEKEY: "$DOCS_PREVIEW_DEPLOY_KEY"
+    DOCS_DEPLOY_SERVER: "$DOCS_PREVIEW_SERVER"
+    DOCS_DEPLOY_SERVER_USER: "$DOCS_PREVIEW_SERVER_USER"
+    DOCS_DEPLOY_PATH: "$DOCS_PREVIEW_PATH"
+    DOCS_DEPLOY_URL_BASE: "$DOCS_PREVIEW_SERVER_URL/esp-chip-errata"
+  script:
+    - source ${CI_PROJECT_DIR}/ci/utils.sh
+    - add_doc_server_ssh_keys $DOCS_DEPLOY_PRIVATEKEY $DOCS_DEPLOY_SERVER $DOCS_DEPLOY_SERVER_USER
+    - export GIT_VER=$(git describe --always)
+    - pip install -r ${CI_PROJECT_DIR}/docs/requirements.txt
+    - mkdir -p logs
+    - deploy-docs | tee logs/doc-url.txt
+  artifacts:
+    when: always
+    paths:
+      - logs/doc-url.txt
+    expire_in: 4 days
+
+post_links:
+  stage: deploy
+  tags: [deploy_docs]
+  image: $ESP_DOCS_ENV_IMAGE
+  needs:
+    - deploy_docs_preview
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'  # Run for all changes to a merge request's source branch
+      changes:
+        - "docs/**/*"
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event' && ($CI_MERGE_REQUEST_LABELS =~ /^(?:[^,\n\r]+,)*build(?:,[^,\n\r]+)*$/i)  # Run if a merge request has build label
+  script:
+    - pip install -r ${CI_PROJECT_DIR}/docs/requirements.txt
+    - ls -al logs
+    - python3 post-mr-note.py $GITLAB_MR_NOTE_TOKEN $CI_PROJECT_PATH $CI_MERGE_REQUEST_IID --url $GITLAB_URL
+
+deploy_docs_production:
+  extends:
+    - .deploy_docs_template
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH       # Run for changes to the default branch
+  variables:
+    TYPE: "production"
+    DOCS_BUILD_DIR: "${CI_PROJECT_DIR}/docs/_build/"
+    DOCS_DEPLOY_PRIVATEKEY: "$DOCS_PROD_DEPLOY_KEY"
+    DOCS_DEPLOY_SERVER: "$DOCS_PROD_SERVER"
+    DOCS_DEPLOY_SERVER_USER: "$DOCS_PROD_SERVER_USER"
+    DOCS_DEPLOY_PATH: "$DOCS_PROD_PATH"
+    DOCS_DEPLOY_URL_BASE: "https://docs.espressif.com/projects/esp-chip-errata"
+  script:
+    - source ${CI_PROJECT_DIR}/ci/utils.sh
+    - add_doc_server_ssh_keys $DOCS_DEPLOY_PRIVATEKEY $DOCS_DEPLOY_SERVER $DOCS_DEPLOY_SERVER_USER
+    - export GIT_VER=$(git describe --always)
+    - pip install -r ${CI_PROJECT_DIR}/docs/requirements.txt
+    - deploy-docs
+
+
+.publish_to_cdp_template:
+  stage: deploy
+  image: $ESP_DOCS_ENV_IMAGE
+  tags:
+    - deploy
+  script:
+    - git config --global credential.helper store
+    # Pass GitLab credentials
+    - echo "https://gitlab-ci-token:${CI_JOB_TOKEN}@{CI_SERVER_HOST}:${CI_SERVER_PORT}/documentation" >> ~/.git-credentials
+    - TOOLS_URL="${CI_SERVER_PROTOCOL}://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_HOST}:${CI_SERVER_PORT}/documentation/documentation-tools.git"
+    - echo $TOOLS_URL
+    - git clone -b feature/add_dmf_tool $TOOLS_URL
+    - ls -al # debugging
+    # Read labels from MR
+    - chmod +x ./documentation-tools/dmf-tool/parse_labels.sh
+    - ./documentation-tools/dmf-tool/parse_labels.sh
+    - cat parse_labels_output.txt
+    # Read parsed PRODUCT_NAME
+    - source parse_labels_output.txt
+    # Skip if no product to publish
+    - |
+      if [ -z "$PRODUCT_NAME" ]; then
+          echo "No product to publish, exiting job."
+          exit 0
+      fi
+    # Generate DMFs
+    - python documentation-tools/dmf-tool/generate-dmf.py -p . -t documentation-tools/dmf-tool/dmf-template.yml
+    - mkdir -p logs
+    - mv ESP*.yml logs/
+    - |
+        if [ -n "$CI_MERGE_REQUEST_IID" ]; then
+            TRACKING_REF="$CI_PROJECT_URL/-/merge_requests/$CI_MERGE_REQUEST_IID"
+        else
+            TRACKING_REF="$CI_PROJECT_URL/-/pipelines/$CI_PIPELINE_ID"
+        fi
+
+        for file in logs/*.yml; do
+            echo "tracking_reference: $TRACKING_REF" >> "$file"
+        done
+
+    # Publish to CDP
+    - chmod +x ./documentation-tools/dmf-tool/publish_cdp.sh
+    - ./documentation-tools/dmf-tool/publish_cdp.sh
+  artifacts:
+    when: always
+    paths:
+      - 'logs/*.yml'
+    expire_in: 1 week
+  allow_failure: true
+
+publish_to_cdp_qa_with_dmf_files:
+  needs:
+      - deploy_docs_preview
+  extends:
+      - .publish_to_cdp_template
+  rules:
+      - if: $CI_PIPELINE_SOURCE == 'merge_request_event'  # Run for all changes to a merge request's source branch
+        changes:
+          - "docs/**/*"
+      - if: $CI_PIPELINE_SOURCE == 'merge_request_event' && ($CI_MERGE_REQUEST_LABELS =~ /^(?:[^,\n\r]+,)*build(?:,[^,\n\r]+)*$/i)  # Run if a merge request has build label
+  variables:
+      MR_BASE_URL: "$CI_MERGE_REQUEST_PROJECT_URL/-/merge_requests"
+      CDP_API_ENDPOINT: "$CDP_API_ENDPOINT_QA"
+
+publish_to_cdp_prod_with_dmf_files:
+  needs:
+      - deploy_docs_production
+  extends:
+      - .publish_to_cdp_template
+  rules:
+      - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH       # Run for changes to the default branch
+  variables:
+      CDP_API_ENDPOINT: "$CDP_API_ENDPOINT_PROD"

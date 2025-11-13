@@ -6,7 +6,7 @@
 .. only:: esp32c6
 
    .. tags::
-      
+
       v0.0
 
 .. only:: esp32h2

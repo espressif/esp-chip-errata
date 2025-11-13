@@ -11,6 +11,9 @@
 /docs/*/*/esp32c3/                                              @documentation/codeowners/esp32c3
 /docs/*/02-errata-summary/esp32c3-errata-summary.rst            @documentation/codeowners/esp32c3
 /docs/*/revision-history/esp32c3-revision-history.rst           @documentation/codeowners/esp32c3
+/docs/*/*/esp32c5/                                              @documentation/codeowners/esp32c5
+/docs/*/02-errata-summary/esp32c5-errata-summary.rst            @documentation/codeowners/esp32c5
+/docs/*/revision-history/esp32c5-revision-history.rst           @documentation/codeowners/esp32c5
 /docs/*/*/esp32c6/                                              @documentation/codeowners/esp32c6
 /docs/*/02-errata-summary/esp32c6-errata-summary.rst            @documentation/codeowners/esp32c6
 /docs/*/revision-history/esp32c6-revision-history.rst           @documentation/codeowners/esp32c6
