@@ -34,4 +34,4 @@
 
 .. only:: esp32p4
 
-   预计将在 :bdg-warning:`下个芯片版本` 中修复。
+   已在芯片版本 :bdg-success:`v3.0` 中修复。

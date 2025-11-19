@@ -235,6 +235,14 @@ All Errata Descriptions
 
         .. include:: shared/rmt-idle-level-cannot-be-controlled.rst
         .. include:: shared/i2c-fail-in-multiple-reads-operation.rst
+        .. include:: esp32p4/load-access-fault-during-power-on-or-deepsleep-wakeup.rst
+        .. include:: esp32p4/unaligned-dma-read-operations-may-return-old-data-when-accessing-overlapping-addresses.rst
+        .. include:: esp32p4/data-errors-caused-by-asynchronous-timing-issues-in-the-mspi-address-overlap-detection-function.rst
+        .. include:: esp32p4/secure-boot-buffer-address-error-in-rom.rst
+        .. include:: esp32p4/output-regulators-cannot-generate-a-reliable-supply-when-peripheral-power-domain-is-off.rst
+        .. include:: esp32p4/mem-to-mem-channel0 -permission-conflict-due-to-shared-transaction-ID.rst
+        .. include:: esp32p4/unauthorized-ahb-access-may-block-subsequent-psram-or-flash-transactions.rst
+        .. include:: esp32p4/secure-download-mode-flash-power-on-failure.rst
 
     .. only:: latex
 
@@ -243,6 +251,14 @@ All Errata Descriptions
 
             shared/rmt-idle-level-cannot-be-controlled
             shared/i2c-fail-in-multiple-reads-operation
+            esp32p4/load-access-fault-during-power-on-or-deepsleep-wakeup
+            esp32p4/unaligned-dma-read-operations-may-return-old-data-when-accessing-overlapping-addresses
+            esp32p4/data-errors-caused-by-asynchronous-timing-issues-in-the-mspi-address-overlap-detection-function
+            esp32p4/secure-boot-buffer-address-error-in-rom
+            esp32p4/output-regulators-cannot-generate-a-reliable-supply-when-peripheral-power-domain-is-off
+            esp32p4/mem-to-mem-channel0 -permission-conflict-due-to-shared-transaction-ID
+            esp32p4/unauthorized-ahb-access-may-block-subsequent-psram-or-flash-transactions
+            esp32p4/secure-download-mode-flash-power-on-failure
 
 .. only:: esp32c5
 
@@ -269,4 +285,3 @@ All Errata Descriptions
             :hidden:
 
             shared/psram-read-after-write-consistency
-

@@ -4,10 +4,14 @@
     :align: center
 
     * - 芯片版本
-      - 乐鑫追踪信息
+      - 生产编码
     * - v0.0
-      - X ``A`` XXXXXXXX
+      - X ``A`` XX
     * - v1.0
-      - X ``C`` XXXXXXXX
+      - X ``C`` XX
     * - v1.3
-      - X ``E`` XXXXXXXX
+      - X ``E`` XX
+    * - v3.0
+      - X ``F`` XX
+    * - v3.1
+      - X ``G`` XX

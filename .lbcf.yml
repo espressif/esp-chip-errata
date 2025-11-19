@@ -392,8 +392,8 @@ documents:
       soc_series_base_filter: ESP32-P4
       document_type: errata # or errata, datasheet, reference, book, guide, application note
       document_type_old_website: datasheet & errata
-      version: v1.0 # or specific version number
-      revision_date: 2025-07-04
+      version: v1.1 # or specific version number
+      revision_date: 2026-02-12
       language: en # or cn
       document_storage: docs
       document_link: https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32p4/index.html
@@ -418,8 +418,8 @@ documents:
       soc_series_base_filter: ESP32-P4
       document_type: errata # or errata, datasheet, reference, book, guide, application note
       document_type_old_website: datasheet & errata
-      version: v1.0 # or specific version number
-      revision_date: 2025-07-04 # or generate automatically?
+      version: v1.1 # or specific version number
+      revision_date: 2026-02-12 # or generate automatically?
       language: cn # or en
       document_storage: docs
       document_link: https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32p4/index.html
