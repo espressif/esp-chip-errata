@@ -31,6 +31,7 @@ This repository is distributed under multiple licenses:
 - The [docs/sphinx-tags.py](./docs/sphinx-tags.py) script is licensed under the [MIT License](./LICENSE-MIT).
 - All documentation is licensed under the [Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA 4.0)](./LICENSE-CC-BY-SA).
 
+This is to test the workflow to sync GitHub PRs.
 
 ## Leave Feedback and Contribute
 
