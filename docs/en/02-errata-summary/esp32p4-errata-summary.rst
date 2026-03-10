@@ -69,7 +69,7 @@
      -
    * - DMA
      - DMA-767
-     - :doc:`/03-errata-description/esp32p4/mem-to-mem-channel0 -permission-conflict-due-to-shared-transaction-ID`
+     - :doc:`/03-errata-description/esp32p4/mem-to-mem-channel0-permission-conflict-due-to-shared-transaction-ID`
      -
      -
      -

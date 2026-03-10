@@ -240,7 +240,7 @@
         .. include:: esp32p4/data-errors-caused-by-asynchronous-timing-issues-in-the-mspi-address-overlap-detection-function.rst
         .. include:: esp32p4/secure-boot-buffer-address-error-in-rom.rst
         .. include:: esp32p4/output-regulators-cannot-generate-a-reliable-supply-when-peripheral-power-domain-is-off.rst
-        .. include:: esp32p4/mem-to-mem-channel0 -permission-conflict-due-to-shared-transaction-ID.rst
+        .. include:: esp32p4/mem-to-mem-channel0-permission-conflict-due-to-shared-transaction-ID.rst
         .. include:: esp32p4/unauthorized-ahb-access-may-block-subsequent-psram-or-flash-transactions.rst
         .. include:: esp32p4/secure-download-mode-flash-power-on-failure.rst
 
@@ -256,7 +256,7 @@
             esp32p4/data-errors-caused-by-asynchronous-timing-issues-in-the-mspi-address-overlap-detection-function
             esp32p4/secure-boot-buffer-address-error-in-rom
             esp32p4/output-regulators-cannot-generate-a-reliable-supply-when-peripheral-power-domain-is-off
-            esp32p4/mem-to-mem-channel0 -permission-conflict-due-to-shared-transaction-ID
+            esp32p4/mem-to-mem-channel0-permission-conflict-due-to-shared-transaction-ID
             esp32p4/unauthorized-ahb-access-may-block-subsequent-psram-or-flash-transactions
             esp32p4/secure-download-mode-flash-power-on-failure
 
