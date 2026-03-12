@@ -6,7 +6,6 @@
     DOCS_DIR: $CI_PROJECT_DIR/docs
     GIT_STRATEGY: fetch
     GIT_DEPTH: 0
-  allow_failure: true
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'  # Run for all changes to a merge request's source branch
   before_script:
