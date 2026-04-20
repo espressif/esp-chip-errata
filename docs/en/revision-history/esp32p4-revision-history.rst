@@ -5,6 +5,13 @@
    * - Date
      - Version
      - Release Notes
+   * - 2026-04-20
+     - v1.2
+     -  - :doc:`/01-chip-identification/index`
+            - Added information about chip revisions v3.2
+        - :doc:`/03-errata-description/index`
+            - In Section :doc:`/03-errata-description/esp32p4/secure-download-mode-flash-power-on-failure`, updated solution to "fixed in chip revision v3.2"
+            - Added Section :doc:`/03-errata-description/esp32p4/device-hang-when-flash-power-on-sequence-runs-twice-with-rom-download-xpd-on-efuse`
    * - 2026-02-12
      - v1.1
      -  - :doc:`/01-chip-identification/index`

@@ -26,4 +26,4 @@ Solution
 
 .. only:: esp32p4
 
-   To be fixed in the :bdg-warning:`next chip revision`.
+   Fixed in chip revision :bdg-success:`v3.2`.

@@ -5,6 +5,13 @@
    * - 日期
      - 版本
      - 发布说明
+   * - 2026-04-20
+     - v1.2
+     -  - :doc:`/01-chip-identification/index`
+            - 新增芯片版本 v3.2 的相关信息
+        - :doc:`/03-errata-description/index`
+            - 在章节 :doc:`/03-errata-description/esp32p4/secure-download-mode-flash-power-on-failure` 中，解决方案更新为“已在芯片版本 v3.2 中修复”
+            - 新增章节 :doc:`/03-errata-description/esp32p4/device-hang-when-flash-power-on-sequence-runs-twice-with-rom-download-xpd-on-efuse`
    * - 2026-02-12
      - v1.1
      -  - :doc:`/01-chip-identification/index`

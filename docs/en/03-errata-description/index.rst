@@ -243,6 +243,7 @@ All Errata Descriptions
         .. include:: esp32p4/mem-to-mem-channel0-permission-conflict-due-to-shared-transaction-ID.rst
         .. include:: esp32p4/unauthorized-ahb-access-may-block-subsequent-psram-or-flash-transactions.rst
         .. include:: esp32p4/secure-download-mode-flash-power-on-failure.rst
+        .. include:: esp32p4/device-hang-when-flash-power-on-sequence-runs-twice-with-rom-download-xpd-on-efuse.rst
 
     .. only:: latex
 
@@ -259,6 +260,7 @@ All Errata Descriptions
             esp32p4/mem-to-mem-channel0-permission-conflict-due-to-shared-transaction-ID
             esp32p4/unauthorized-ahb-access-may-block-subsequent-psram-or-flash-transactions
             esp32p4/secure-download-mode-flash-power-on-failure
+            esp32p4/device-hang-when-flash-power-on-sequence-runs-twice-with-rom-download-xpd-on-efuse
 
 
 .. only:: esp32c5
