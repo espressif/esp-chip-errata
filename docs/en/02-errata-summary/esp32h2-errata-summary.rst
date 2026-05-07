@@ -1,6 +1,6 @@
 .. flat-table:: Errata summary
    :header-rows: 2
-   :widths: 1 1 5 1 1 1
+   :widths: 2 1 5 1 1 1
 
    * - :rspan:`1` Category
      - :rspan:`1` Errata No.
@@ -68,7 +68,7 @@
      - Y
      - Y
      -
-   * - ECC|ECDSA
+   * - ECC|ECDSA_DS\ :sup:`1`
      - ECC-11400
      - :doc:`../03-errata-description/esp32h2/ecc-timing-attack`
      - Y
@@ -86,3 +86,5 @@
      - Y
      - Y
      - Y
+
+\ :sup:`1` ECDSA_DS: ECDSA Digital Signature Peripheral.

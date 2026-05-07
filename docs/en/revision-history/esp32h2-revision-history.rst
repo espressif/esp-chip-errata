@@ -5,6 +5,9 @@
    * - Date
      - Version
      - Release Notes
+   * - 2026-05-08
+     - v1.2
+     - Renamed ECDSA to ECDSA_DS
    * - 2025-07-08
      - v1.1
      - Updated Section :doc:`/03-errata-description/shared/i2c-fail-in-multiple-reads-operation`

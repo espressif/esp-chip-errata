@@ -6,6 +6,9 @@
    * - 日期
      - 版本
      - 发布说明
+   * - 2026-05-08
+     - v1.2
+     - 重命名 ECDSA 为 ECDSA_DS
    * - 2025-07-08
      - v1.1
      - 更新章节 :doc:`/03-errata-description/shared/i2c-fail-in-multiple-reads-operation`
