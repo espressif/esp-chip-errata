@@ -5,6 +5,10 @@
    * - 日期
      - 版本
      - 发布说明
+   * - 2026-06-01
+     - v1.3
+     -  - :doc:`/01-chip-identification/index`
+            - 更新芯片丝印示意图
    * - 2025-01-02
      - v1.2
      -  - :doc:`/01-chip-identification/index`

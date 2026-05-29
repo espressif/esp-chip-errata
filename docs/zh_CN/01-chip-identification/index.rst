@@ -39,13 +39,24 @@ eFuse 位
 芯片标识
 ++++++++
 
-.. only:: not esp32p4 and not esp32c5 and not esp32c61
+.. only:: not esp32p4 and not esp32c5 and not esp32c61 and not esp32c2
 
     - 芯片丝印的 **Espressif Tracking Information（乐鑫追踪信息）** 行
 
     .. figure:: ../../_static/chip-marking.png
         :align: center
         :scale: 32%
+        :alt: 芯片丝印示意图
+
+        芯片丝印示意图
+
+.. only:: esp32c2
+
+    - 芯片丝印的 **Espressif Tracking Information（乐鑫追踪信息）** 行
+
+    .. figure:: ../../_static/chip_marking_legacy.png
+        :align: center
+        :scale: 55%
         :alt: 芯片丝印示意图
 
         芯片丝印示意图
