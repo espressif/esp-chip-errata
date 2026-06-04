@@ -38,3 +38,10 @@
      -
      - Y
      - Y
+   * - ECC|ECDSA
+     - ECC-833
+     - :doc:`/03-errata-description/esp32c5/ecc-memory-power-down-bypasses-verification`
+     -
+     -
+     - Y
+     - Y

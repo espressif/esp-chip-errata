@@ -5,6 +5,10 @@
    * - Date
      - Version
      - Release Notes
+   * - 2026-06-12
+     - v1.2
+     -  :doc:`/03-errata-description/index`
+          - Added Section :doc:`/03-errata-description/esp32c5/ecc-memory-power-down-bypasses-verification`
    * - 2026-03-04
      - v1.1
      -  - :doc:`/01-chip-identification/index`
