@@ -73,6 +73,8 @@ ESP32H2_DOCS = ['01-chip-identification/esp32h2/*.rst',
                 '03-errata-description/shared/rmt-idle-level-cannot-be-controlled.rst',
                 '03-errata-description/shared/i2c-fail-in-multiple-reads-operation.rst',
                 '03-errata-description/shared/cpu-load-store.rst',
+                '03-errata-description/shared/ecdsa-invalid-r-and-s-signature-accepted.rst',
+                '03-errata-description/shared/ecdsa-invalid-s-signature-accepted.rst',
                 'revision-history/esp32h2-revision-history.rst',
                 ]
 ESP32_DOCS = ['01-chip-identification/esp32/*.rst',

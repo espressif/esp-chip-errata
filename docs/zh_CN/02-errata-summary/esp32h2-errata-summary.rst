@@ -1,6 +1,6 @@
 .. flat-table:: 勘误表
    :header-rows: 2
-   :widths: 2 1 5 1 1 1
+   :widths: 3 2 4 1 1 1
 
    * - :rspan:`1` 类别
      - :rspan:`1` 勘误编号
@@ -68,9 +68,19 @@
      - Y
      - Y
      -
-   * - ECC|ECDSA_DS\ :sup:`1`
+   * - :rspan:`2` ECC|ECDSA_DS\ :sup:`1`
      - ECC-11400
      - :doc:`../03-errata-description/esp32h2/ecc-timing-attack`
+     - Y
+     - Y
+     -
+   * - ECDSA_DS-836
+     - :doc:`../03-errata-description/shared/ecdsa-invalid-r-and-s-signature-accepted`
+     -
+     -
+     - Y
+   * - ECDSA_DS-837
+     - :doc:`../03-errata-description/shared/ecdsa-invalid-s-signature-accepted`
      - Y
      - Y
      -

@@ -89,6 +89,8 @@ All Errata Descriptions
         .. include:: ./{IDF_TARGET_PATH_NAME}/accidentally-enter-usb-boot-mode.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/aes-cpa-attack.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/ecc-timing-attack.rst
+        .. include:: ./shared/ecdsa-invalid-r-and-s-signature-accepted.rst
+        .. include:: ./shared/ecdsa-invalid-s-signature-accepted.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/tx-power-lower-than-expected.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/pcnt-fail-to-trigger-step-interrupt.rst
 
@@ -108,6 +110,8 @@ All Errata Descriptions
             ./{IDF_TARGET_PATH_NAME}/accidentally-enter-usb-boot-mode.rst
             ./{IDF_TARGET_PATH_NAME}/aes-cpa-attack.rst
             ./{IDF_TARGET_PATH_NAME}/ecc-timing-attack.rst
+            ./shared/ecdsa-invalid-r-and-s-signature-accepted.rst
+            ./shared/ecdsa-invalid-s-signature-accepted.rst
             ./{IDF_TARGET_PATH_NAME}/tx-power-lower-than-expected
             ./{IDF_TARGET_PATH_NAME}/pcnt-fail-to-trigger-step-interrupt.rst
 

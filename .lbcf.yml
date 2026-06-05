@@ -340,8 +340,8 @@ documents:
       soc_series_base_filter: ESP32-H2
       document_type: errata # or errata, datasheet, reference, book, guide, application note
       document_type_old_website: datasheet & errata
-      version: v1.2 # or specific version number
-      revision_date: 2026-05-08
+      version: v1.3 # or specific version number
+      revision_date: 2026-07-03
       language: en # or cn
       document_storage: docs
       document_link: https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32h2/index.html
@@ -366,8 +366,8 @@ documents:
       soc_series_base_filter: ESP32-H2
       document_type: errata # or errata, datasheet, reference, book, guide, application note
       document_type_old_website: datasheet & errata
-      version: v1.2 # or specific version number
-      revision_date: 2026-05-08 # or generate automatically?
+      version: v1.3 # or specific version number
+      revision_date: 2026-07-03 # or generate automatically?
       language: cn # or en
       document_storage: docs
       document_link: https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32h2/index.html
