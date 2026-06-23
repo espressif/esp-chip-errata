@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     script.src = "https://widget.kapa.ai/kapa-widget.bundle.js";
     script.setAttribute("data-bot-protection-mechanism", "hcaptcha");
     script.setAttribute("data-website-id", "31c12096-59db-40c4-8656-b0e04a9cb053");
-    script.setAttribute("data-project-name", "ESP Chip Errata");
+    script.setAttribute("data-modal-title", "ESP Docs AI Assistant");
+    script.setAttribute("data-project-name", "esp-en");
+    script.setAttribute("data-modal-ask-ai-input-placeholder", "Ask ESP Docs AI Assistant...");
     script.setAttribute("data-project-color", "#C62817");
     script.setAttribute("data-project-logo", "https://dl.espressif.com/public/logo.png");
     script.setAttribute("data-button-image", "https://dl.espressif.com/chatbot/Chatbot.png");
@@ -26,6 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
     script.setAttribute("data-modal-example-questions-col-span", "6,6");
     script.setAttribute("data-modal-disclaimer", "This custom large language model (LLM), trained on official documentation from espressif.com, is designed to provide technical support and answers related to Espressif’s products and services. Give it a try, share your thoughts, and let us know your feedback—we truly appreciate it! \n\n**Note**: AI-generated information may be incomplete or inaccurate. Always verify critical information with official sources.");
     script.setAttribute("data-modal-example-questions", "What information does errata include?,Does ESP32-S3 DMA have unfixed bugs in errata?");
+    script.setAttribute("data-mcp-enabled", "true");
+    script.setAttribute("data-mcp-server-url", "https://mcp.espressif.com/docs");
+    script.setAttribute("data-mcp-dropdown-description", "Learn more about Espressif Documentation MCP server in [this article](https://developer.espressif.com/blog/2026/04/doc-mcp-server/).");
+    script.setAttribute("data-mcp-button-text", "MCP Server");
     script.async = true;
     document.head.appendChild(script);
   });

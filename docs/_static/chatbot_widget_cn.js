@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     script.src = "https://widget.kapa.ai/kapa-widget.bundle.js";
     script.setAttribute("data-bot-protection-mechanism", "hcaptcha");
     script.setAttribute("data-website-id", "d7d0c240-e687-4562-8c1a-5058c4c933b5");
-    script.setAttribute("data-modal-title", "ESP 芯片勘误表文档 AI 助手");
-    script.setAttribute("data-project-name", "ESP 芯片勘误表");
+    script.setAttribute("data-modal-title", "乐鑫文档 AI 助手");
+    script.setAttribute("data-project-name", "esp-cn");
+    script.setAttribute("data-modal-ask-ai-input-placeholder", "向乐鑫文档 AI 助手提问...");
     script.setAttribute("data-project-color", "#C62817");
     script.setAttribute("data-project-logo", "https://dl.espressif.com/public/logo.png");
     script.setAttribute("data-button-image", "https://dl.espressif.com/chatbot/Chatbot.png");
@@ -29,6 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
     script.setAttribute("data-modal-example-questions-col-span", "7");
     script.setAttribute("data-modal-disclaimer", "欢迎使用乐鑫文档智能问答助手！本助手基于乐鑫的公开文档，旨在为您提供产品和服务的技术支持与解答。如有任何意见或建议，欢迎留下反馈！\n\n**注意**：本回答由 AI 生成，可能存在不准确之处，请核实重要信息。");
     script.setAttribute("data-modal-example-questions", "勘误表包含哪些信息？,在勘误表中，ESP32-S3 的 DMA 是否有未修复的错误？");
+    script.setAttribute("data-mcp-enabled", "true");
+    script.setAttribute("data-mcp-server-url", "https://mcp.espressif.com/docs");
+    script.setAttribute("data-mcp-dropdown-description", "更多关于乐鑫文档 MCP 服务器的信息请参阅[这篇文章](https://blog.csdn.net/espressif/article/details/159958703?spm=1001.2014.3001.5501)。");
+    script.setAttribute("data-mcp-button-text", "MCP 服务器");
     script.async = true;
     document.head.appendChild(script);
   });
