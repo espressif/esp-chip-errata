@@ -5,6 +5,13 @@
    * - 日期
      - 版本
      - 发布说明
+   * - 2026-07-07
+     - v1.3
+     -  - :doc:`/02-errata-summary/index`
+            - 改进格式
+        - :doc:`/03-errata-description/index`
+            - 新增章节 :doc:`/03-errata-description/shared/ecdsa-invalid-r-and-s-signature-accepted`
+            - 新增章节 :doc:`/03-errata-description/shared/ecdsa-invalid-s-signature-accepted`
    * - 2026-04-20
      - v1.2
      -  - :doc:`/01-chip-identification/index`

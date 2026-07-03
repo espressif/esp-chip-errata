@@ -243,11 +243,13 @@ All Errata Descriptions
         .. include:: esp32p4/unaligned-dma-read-operations-may-return-old-data-when-accessing-overlapping-addresses.rst
         .. include:: esp32p4/data-errors-caused-by-asynchronous-timing-issues-in-the-mspi-address-overlap-detection-function.rst
         .. include:: esp32p4/secure-boot-buffer-address-error-in-rom.rst
+        .. include:: esp32p4/secure-download-mode-flash-power-on-failure.rst
+        .. include:: esp32p4/device-hang-when-flash-power-on-sequence-runs-twice-with-rom-download-xpd-on-efuse.rst
         .. include:: esp32p4/output-regulators-cannot-generate-a-reliable-supply-when-peripheral-power-domain-is-off.rst
         .. include:: esp32p4/mem-to-mem-channel0-permission-conflict-due-to-shared-transaction-ID.rst
         .. include:: esp32p4/unauthorized-ahb-access-may-block-subsequent-psram-or-flash-transactions.rst
-        .. include:: esp32p4/secure-download-mode-flash-power-on-failure.rst
-        .. include:: esp32p4/device-hang-when-flash-power-on-sequence-runs-twice-with-rom-download-xpd-on-efuse.rst
+        .. include:: ./shared/ecdsa-invalid-r-and-s-signature-accepted.rst
+        .. include:: ./shared/ecdsa-invalid-s-signature-accepted.rst
 
     .. only:: latex
 
@@ -260,12 +262,13 @@ All Errata Descriptions
             esp32p4/unaligned-dma-read-operations-may-return-old-data-when-accessing-overlapping-addresses
             esp32p4/data-errors-caused-by-asynchronous-timing-issues-in-the-mspi-address-overlap-detection-function
             esp32p4/secure-boot-buffer-address-error-in-rom
+            esp32p4/secure-download-mode-flash-power-on-failure
+            esp32p4/device-hang-when-flash-power-on-sequence-runs-twice-with-rom-download-xpd-on-efuse
             esp32p4/output-regulators-cannot-generate-a-reliable-supply-when-peripheral-power-domain-is-off
             esp32p4/mem-to-mem-channel0-permission-conflict-due-to-shared-transaction-ID
             esp32p4/unauthorized-ahb-access-may-block-subsequent-psram-or-flash-transactions
-            esp32p4/secure-download-mode-flash-power-on-failure
-            esp32p4/device-hang-when-flash-power-on-sequence-runs-twice-with-rom-download-xpd-on-efuse
-
+            ./shared/ecdsa-invalid-r-and-s-signature-accepted.rst
+            ./shared/ecdsa-invalid-s-signature-accepted.rst
 
 .. only:: esp32c5
 

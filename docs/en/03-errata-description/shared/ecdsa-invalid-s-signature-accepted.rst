@@ -7,6 +7,12 @@
 
       v0.0, v0.1
 
+.. only:: esp32p4
+
+   .. tags::
+
+      v1.3
+
 Description
 ^^^^^^^^^^^
 

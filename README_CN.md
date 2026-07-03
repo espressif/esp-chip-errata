@@ -9,6 +9,7 @@ esp-chip-errata 仓库包含以下勘误表，记录了芯片已知的错误及�
 - [ESP32-C2 (ESP8684) 系列芯片勘误表](https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32c2/index.html)
 - [ESP32-C6 系列芯片勘误表](https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32c6/index.html)
 - [ESP32-H2 系列芯片勘误表](https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32h2/index.html)
+- [ESP32-P4 系列芯片勘误表](https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32p4/index.html)
 
 
 ## 功能特性

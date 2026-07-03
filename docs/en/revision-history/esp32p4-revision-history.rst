@@ -5,6 +5,13 @@
    * - Date
      - Version
      - Release Notes
+   * - 2026-07-07
+     - v1.3
+     -  - :doc:`/02-errata-summary/index`
+            - Improved formatting
+        - :doc:`/03-errata-description/index`
+            - Added Section :doc:`/03-errata-description/shared/ecdsa-invalid-r-and-s-signature-accepted`
+            - Added Section :doc:`/03-errata-description/shared/ecdsa-invalid-s-signature-accepted`
    * - 2026-04-20
      - v1.2
      -  - :doc:`/01-chip-identification/index`

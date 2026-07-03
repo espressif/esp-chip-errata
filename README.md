@@ -9,6 +9,7 @@ The esp-chip-errata repository hosts the following errata, which documents the k
 - [ESP32-C2 (ESP8684) Series SoC Errata](https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32c2/index.html)
 - [ESP32-C6 Series SoC Errata](https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32c6/index.html)
 - [ESP32-H2 Series SoC Errata](https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32h2/index.html)
+- [ESP32-P4 Series SoC Errata](https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32p4/index.html)
 
 
 ## Features

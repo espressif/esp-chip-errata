@@ -116,6 +116,14 @@ class PythonGitlabNotes():
                 product_name = 'ESP32-C6'
             elif chip_series == 'esp32h2':
                 product_name = 'ESP32-H2'
+            elif chip_series == 'esp32p4':
+                product_name = 'ESP32-P4'
+            elif chip_series == 'esp32c5':
+                product_name = 'ESP32-C5'
+            elif chip_series == 'esp32c2':
+                product_name = 'ESP32-C2'
+            elif chip_series == 'esp32c61':
+                product_name = 'ESP32-C61'
             note += f"- {product_name} \n"
 
             # Append HTML link if available

@@ -88,6 +88,8 @@ ESP32P4_DOCS = ['01-chip-identification/esp32p4/*.rst',
                 '03-errata-description/esp32p4/*.rst',
                 '03-errata-description/shared/rmt-idle-level-cannot-be-controlled.rst',
                 '03-errata-description/shared/i2c-fail-in-multiple-reads-operation.rst',
+                '03-errata-description/shared/ecdsa-invalid-r-and-s-signature-accepted.rst',
+                '03-errata-description/shared/ecdsa-invalid-s-signature-accepted.rst',
                 'revision-history/esp32p4-revision-history.rst',
               ]
 ESP32C5_DOCS = ['01-chip-identification/esp32c5/*.rst',
