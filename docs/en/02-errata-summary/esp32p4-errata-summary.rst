@@ -118,8 +118,8 @@
      - Y
    * - ECDSA_DS-837
      - :doc:`../03-errata-description/shared/ecdsa-invalid-s-signature-accepted`
-     -
-     -
+     - Y
+     - Y
      - Y
      -
      -

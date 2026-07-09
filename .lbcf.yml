@@ -393,7 +393,7 @@ documents:
       document_type: errata # or errata, datasheet, reference, book, guide, application note
       document_type_old_website: datasheet & errata
       version: v1.3 # or specific version number
-      revision_date: 2026-07-07
+      revision_date: 2026-07-10
       language: en # or cn
       document_storage: docs
       document_link: https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32p4/index.html
@@ -419,7 +419,7 @@ documents:
       document_type: errata # or errata, datasheet, reference, book, guide, application note
       document_type_old_website: datasheet & errata
       version: v1.3 # or specific version number
-      revision_date: 2026-07-07 # or generate automatically?
+      revision_date: 2026-07-10 # or generate automatically?
       language: cn # or en
       document_storage: docs
       document_link: https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32p4/index.html

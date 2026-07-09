@@ -5,7 +5,7 @@
    * - Date
      - Version
      - Release Notes
-   * - 2026-07-07
+   * - 2026-07-10
      - v1.3
      -  - :doc:`/02-errata-summary/index`
             - Improved formatting
