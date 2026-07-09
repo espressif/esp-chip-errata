@@ -535,3 +535,56 @@ documents:
       scheduled_release_date:
       document_status: active
       document_classification: public
+
+########################################
+# ESP32-S31 Series SoC Errata
+########################################
+    # Common configuration for internal release and public release
+    - document_name: ESP32-S31 Series SoC Errata
+      doc_id:
+      translation_docid:
+      chip_series: ESP32-S31
+      product_name:
+        - ESP32-S31 SoC Series
+      product_name_old_website:
+        - ESP32-S31
+      soc_series_base_filter: ESP32-S31
+      document_type: errata # or errata, datasheet, reference, book, guide, application note
+      document_type_old_website: datasheet & errata
+      version: v0.1 # or specific version number
+      revision_date: 2026-07-10
+      language: en # or cn
+      document_storage: docs
+      document_link: https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32s31/index.html
+      document_summary: This document describes known errata in ESP32-S31 series of SoCs.
+      notify_subscribers: true # or false
+      visibility_on_website: show # or hide
+      scheduled_release_date:
+      document_status: active
+      document_classification: public
+########################################
+# ESP32-S31 系列芯片勘误表
+########################################
+    # Common configuration for internal release and public release
+    - document_name: ESP32-S31 系列芯片勘误表
+      doc_id:
+      translation_docid:
+      chip_series: ESP32-S31
+      product_name:
+        - ESP32-S31 SoC Series
+      product_name_old_website:
+        - ESP32-S31
+      soc_series_base_filter: ESP32-S31
+      document_type: errata # or errata, datasheet, reference, book, guide, application note
+      document_type_old_website: datasheet & errata
+      version: v0.1 # or specific version number
+      revision_date: 2026-07-10 # or generate automatically?
+      language: cn # or en
+      document_storage: docs
+      document_link: https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32s31/index.html
+      document_summary: 本文档描述了 ESP32-S31 系列芯片的已知错误。
+      notify_subscribers: true # or false
+      visibility_on_website: show # or hide
+      scheduled_release_date:
+      document_status: active
+      document_classification: public

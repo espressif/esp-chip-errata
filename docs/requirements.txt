@@ -1,4 +1,4 @@
-esp-docs==2.0.0
+esp-docs>=2.2.0
 urllib3
 python-gitlab
 linuxdoc==20210324

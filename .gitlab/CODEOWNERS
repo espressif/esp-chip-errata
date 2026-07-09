@@ -32,6 +32,9 @@
 /docs/*/*/esp32s3/                                              @documentation/codeowners/esp32s3
 /docs/*/02-errata-summary/esp32s3-errata-summary.rst            @documentation/codeowners/esp32s3
 /docs/*/revision-history/esp32s3-revision-history.rst           @documentation/codeowners/esp32s3
+/docs/*/*/esp32s31/                                             @documentation/codeowners/esp32s31
+/docs/*/02-errata-summary/esp32s31-errata-summary.rst           @documentation/codeowners/esp32s31
+/docs/*/revision-history/esp32s31-revision-history.rst          @documentation/codeowners/esp32s31
 
 # Shared content                                                Owners
 /docs/_static/                                                  @documentation/codeowners/esp-chip-errata

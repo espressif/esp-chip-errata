@@ -304,3 +304,19 @@ All Errata Descriptions
             :hidden:
 
             shared/psram-read-after-write-consistency
+
+
+.. only:: esp32s31
+
+    .. only:: html
+
+        .. include:: esp32s31/vdd-spi-1v8-boot-unavailable.rst
+        .. include:: shared/ecdsa-invalid-r-and-s-signature-accepted.rst
+
+    .. only:: latex
+
+        .. toctree::
+            :hidden:
+
+            esp32s31/vdd-spi-1v8-boot-unavailable
+            shared/ecdsa-invalid-r-and-s-signature-accepted

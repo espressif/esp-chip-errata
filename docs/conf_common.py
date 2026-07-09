@@ -5,7 +5,7 @@ import yaml
 
 languages = ['en', 'zh_CN']
 
-idf_targets = ['esp32s2', 'esp32s3', 'esp32c3', 'esp32c6', 'esp32h2', 'esp32c2', 'esp32', 'esp32p4', 'esp32c5', 'esp32c61']
+idf_targets = ['esp32s2', 'esp32s3', 'esp32c3', 'esp32c6', 'esp32h2', 'esp32c2', 'esp32', 'esp32p4', 'esp32c5', 'esp32c61', 'esp32s31']
 
 # Map idf_target to chip_series in lbcf.yml
 idf_target_to_chip_series = {
@@ -19,6 +19,7 @@ idf_target_to_chip_series = {
     "esp32p4": "ESP32-P4",
     "esp32c5": "ESP32-C5",
     "esp32c61": "ESP32-C61",
+    "esp32s31": "ESP32-S31",
 }
 
 extensions += ['sphinx_copybutton',
@@ -106,6 +107,13 @@ ESP32C61_DOCS = ['01-chip-identification/esp32c61/*.rst',
                 'revision-history/esp32c61-revision-history.rst',
               ]
 
+ESP32S31_DOCS = ['01-chip-identification/esp32s31/*.rst',
+                '02-errata-summary/esp32s31-errata-summary.rst',
+                '03-errata-description/esp32s31/*.rst',
+                '03-errata-description/shared/ecdsa-invalid-r-and-s-signature-accepted.rst',
+                'revision-history/esp32s31-revision-history.rst',
+              ]
+
 conditional_include_dict = {'esp32c2':ESP32C2_DOCS,
                             'esp32c3':ESP32C3_DOCS,
                             'esp32c6':ESP32C6_DOCS,
@@ -116,6 +124,7 @@ conditional_include_dict = {'esp32c2':ESP32C2_DOCS,
                             'esp32p4':ESP32P4_DOCS,
                             'esp32c5':ESP32C5_DOCS,
                             'esp32c61':ESP32C61_DOCS,
+                            'esp32s31':ESP32S31_DOCS,
                             }
 
 # link roles config
