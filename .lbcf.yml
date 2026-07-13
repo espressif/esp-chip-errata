@@ -541,8 +541,8 @@ documents:
 ########################################
     # Common configuration for internal release and public release
     - document_name: ESP32-S31 Series SoC Errata
-      doc_id:
-      translation_docid:
+      doc_id: 10971
+      translation_docid: 10973
       chip_series: ESP32-S31
       product_name:
         - ESP32-S31 SoC Series
@@ -567,8 +567,8 @@ documents:
 ########################################
     # Common configuration for internal release and public release
     - document_name: ESP32-S31 系列芯片勘误表
-      doc_id:
-      translation_docid:
+      doc_id: 10973
+      translation_docid: 10971
       chip_series: ESP32-S31
       product_name:
         - ESP32-S31 SoC Series

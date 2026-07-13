@@ -30,7 +30,7 @@ pdf_title = u' Series SoC Errata '
 # for a list of supported languages.
 language = 'en'
 
-doc_id = {'esp32s2': '5545', 'esp32s3': '6121', 'esp32c2': '6705', 'esp32c3': '6333', 'esp32c6': '7165', 'esp32h2': '7119', 'esp32': '3709', 'esp32p4': '9209', 'esp32c5': '9679', 'esp32c61': '9851', 'esp32s31': ''}
+doc_id = {'esp32s2': '5545', 'esp32s3': '6121', 'esp32c2': '6705', 'esp32c3': '6333', 'esp32c6': '7165', 'esp32h2': '7119', 'esp32': '3709', 'esp32p4': '9209', 'esp32c5': '9679', 'esp32c61': '9851', 'esp32s31': '10971'}
 
 # Configuration for sphinx_tags
 tags_overview_title = "Errata Descriptions by Chip Revisions"
