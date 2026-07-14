@@ -12,8 +12,8 @@ Description
 
 The voltage corresponding to the default value of EXT_LDO_DREF is not 1.8 V, and the chip cannot boot from flash under 1.8 V VDD_SPI conditions.
 
-Workaround
-^^^^^^^^^^
+Workarounds
+^^^^^^^^^^^
 
 Boot from flash using 3.3 V VDD_SPI.
 

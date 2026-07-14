@@ -32,4 +32,10 @@
 解决方案
 ^^^^^^^^
 
-:bdg-warning:`暂无` 修复计划。
+.. only:: esp32h2 or esp32p4
+
+   :bdg-warning:`暂无` 修复计划。
+
+.. only:: esp32s31
+
+   预计将在 :bdg-warning:`下个芯片版本` 中修复。

@@ -32,4 +32,10 @@ Use RSA_DS Secure Boot instead of ECDSA_DS Secure Boot.
 Solution
 ^^^^^^^^
 
-:bdg-warning:`No fix` scheduled.
+.. only:: esp32h2 or esp32p4
+
+   :bdg-warning:`No fix` scheduled.
+
+.. only:: esp32s31
+
+   To be fixed in the :bdg-warning:`next chip revision`.
