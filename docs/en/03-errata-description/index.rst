@@ -140,8 +140,8 @@ All Errata Descriptions
         .. include:: {IDF_TARGET_PATH_NAME}/usb-otg-abnormal-data-ahb-arbitration.rst
         .. include:: {IDF_TARGET_PATH_NAME}/sar-adc-bit1-no-flip.rst
         .. include:: shared/rtc-reg-read-error-from-light-sleep.rst
-        .. include:: shared/tchsen-scan-done-int-raw-data-undefined.rst
         .. include:: {IDF_TARGET_PATH_NAME}/tchsen-scan-done-int-occurs-twice.rst
+        .. include:: shared/tchsen-scan-done-int-raw-data-undefined.rst
 
     .. only:: latex
 

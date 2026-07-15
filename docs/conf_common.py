@@ -142,6 +142,9 @@ html_css_files = ['prevent_break_at_hyphen.css']
 # Add chatbot widget
 html_css_files += ['chatbot_widget.css']
 
+# Set column width for the errata summary table with merged cells
+html_css_files += ['table.css']
+
 # Extra options required by sphinx_idf_theme
 project_slug = 'esp-chip-errata'
 
@@ -214,6 +217,9 @@ preamble_extra = r'''
 \setmonofont{MaisonNeueMono-Regular}
 
 \setsansfont{MaisonNeue-Light}
+
+% Minimum table column width
+\setlength{\tymin}{20em}
 '''
 
 # LaTeX Figure alignment

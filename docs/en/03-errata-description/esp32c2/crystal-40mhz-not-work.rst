@@ -1,4 +1,4 @@
-[Crystal-5948] 40 MHz Crystal Cannot Work
+[XTAL-5948] 40 MHz Crystal Cannot Work
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. only:: esp32c2
 

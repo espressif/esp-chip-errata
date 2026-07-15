@@ -1,6 +1,9 @@
+.. tabularcolumns:: |p{1.5cm}|p{1.6cm}|p{6cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|
+
+.. rst-class:: errata-table
+
 .. flat-table:: 勘误表
    :header-rows: 2
-   :widths: 1 1 6 1 1 1 1 1 1
 
    * - :rspan:`1` 类别
      - :rspan:`1` 勘误编号

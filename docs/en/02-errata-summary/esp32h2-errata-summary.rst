@@ -1,3 +1,7 @@
+.. tabularcolumns:: |p{2.4cm}|p{1.6cm}|p{6cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|
+
+.. rst-class:: errata-table
+
 .. flat-table:: Errata summary
    :header-rows: 2
    :widths: 3 2 4 1 1 1
@@ -68,7 +72,9 @@
      - Y
      - Y
      -
-   * - :rspan:`2` ECC|ECDSA_DS\ :sup:`1`
+   * - :rspan:`2` ECC
+
+       ECDSA_DS\ :sup:`1`
      - ECC-11400
      - :doc:`../03-errata-description/esp32h2/ecc-timing-attack`
      - Y

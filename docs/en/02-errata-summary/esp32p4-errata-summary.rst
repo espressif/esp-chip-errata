@@ -1,3 +1,7 @@
+.. tabularcolumns:: |p{1.5cm}|p{1.6cm}|p{6cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|
+
+.. rst-class:: errata-table
+
 .. flat-table:: Errata summary
    :header-rows: 2
    :widths: 1 1 6 1 1 1 1 1 1

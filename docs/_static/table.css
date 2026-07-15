@@ -1,0 +1,25 @@
+table.errata-table {
+    table-layout: fixed;
+    width: 100%;
+    min-width: 730px;
+}
+
+/* Configure cell margin for allbody cells */
+table.errata-table tbody td > p {
+    margin: 0;
+}
+
+/* Configure cell margin for category, errata no., and description columns */
+table.errata-table thead tr:nth-child(1) th:nth-child(1) > p,
+table.errata-table thead tr:nth-child(1) th:nth-child(2) > p,
+table.errata-table thead tr:nth-child(1) th:nth-child(3) > p,
+table.errata-table tbody td:nth-child(1) > p,
+table.errata-table tbody td:nth-child(2) > p,
+table.errata-table tbody td:has(a) > p {
+    margin: 0 0 0 -10px;
+}
+
+/* Fixed proportion for Category, Errata No., and Description columns*/
+table.errata-table thead tr:nth-child(1) th:nth-child(1) { width: 12% !important; }
+table.errata-table thead tr:nth-child(1) th:nth-child(2) { width: 15% !important; }
+table.errata-table thead tr:nth-child(1) th:nth-child(3) { width: 33% !important; }
