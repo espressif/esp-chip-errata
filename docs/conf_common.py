@@ -139,9 +139,6 @@ html_static_path = ['../_static']
 # Custom css files to prevent break at hyphens
 html_css_files = ['prevent_break_at_hyphen.css']
 
-# Add chatbot widget
-html_css_files += ['chatbot_widget.css']
-
 # Set column width for the errata summary table with merged cells
 html_css_files += ['table.css']
 
