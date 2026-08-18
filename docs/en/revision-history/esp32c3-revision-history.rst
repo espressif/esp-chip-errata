@@ -5,6 +5,10 @@
    * - Date
      - Version
      - Release Notes
+   * - 2026-08-18
+     - v1.3
+     -  - :doc:`/03-errata-description/index`
+            - Added Section :doc:`/03-errata-description/shared/cpu-misaligned-memory-access-may-lead-to-exception`
    * - 2025-03-18
      - v1.2
      -  - :doc:`/01-chip-identification/index`

@@ -9,12 +9,17 @@
    * - v0.0
      - v0.1
      - v0.2
-   * - RISC-V CPU
+   * - :rspan:`1` RISC-V CPU
      - CPU-206
      - :doc:`/03-errata-description/shared/cpu-load-store`
      - Y
      - Y
      -
+   * - CPU-863
+     - :doc:`/03-errata-description/shared/cpu-misaligned-memory-access-may-lead-to-exception`
+     - Y
+     - Y
+     - Y
    * - :rspan:`1` 时钟
      - CLK-6996
      - :doc:`/03-errata-description/shared/clock-rc-fast-clk-inaccurate`

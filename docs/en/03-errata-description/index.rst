@@ -7,6 +7,7 @@ All Errata Descriptions
 
     .. only:: html
 
+        .. include:: shared/cpu-misaligned-memory-access-may-lead-to-exception.rst
         .. include:: shared/sar-adc-adc2-not-work.rst
         .. include:: {IDF_TARGET_PATH_NAME}/sar-adc-continous-insufficient-read.rst
 
@@ -15,6 +16,7 @@ All Errata Descriptions
         .. toctree::
             :hidden:
 
+            shared/cpu-misaligned-memory-access-may-lead-to-exception
             shared/sar-adc-adc2-not-work
             {IDF_TARGET_PATH_NAME}/sar-adc-continous-insufficient-read
 
@@ -23,6 +25,7 @@ All Errata Descriptions
     .. only:: html
 
         .. include:: shared/cpu-load-store.rst
+        .. include:: shared/cpu-misaligned-memory-access-may-lead-to-exception.rst
         .. include:: shared/clock-rc-fast-clk-inaccurate.rst
         .. include:: {IDF_TARGET_PATH_NAME}/clock-rc32k-not-oscillate.rst
         .. include:: {IDF_TARGET_PATH_NAME}/reset-rwdt-reset.rst
@@ -38,6 +41,7 @@ All Errata Descriptions
             :hidden:
 
             shared/cpu-load-store
+            shared/cpu-misaligned-memory-access-may-lead-to-exception
             shared/clock-rc-fast-clk-inaccurate
             {IDF_TARGET_PATH_NAME}/clock-rc32k-not-oscillate
             {IDF_TARGET_PATH_NAME}/reset-rwdt-reset

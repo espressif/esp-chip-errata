@@ -5,6 +5,10 @@
    * - 日期
      - 版本
      - 发布说明
+   * - 2026-08-18
+     - v1.3
+     -  - :doc:`/03-errata-description/index`
+            - 新增章节 :doc:`/03-errata-description/shared/cpu-misaligned-memory-access-may-lead-to-exception`
    * - 2025-03-18
      - v1.2
      -  - :doc:`/01-chip-identification/index`

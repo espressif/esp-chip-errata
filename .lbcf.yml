@@ -236,8 +236,8 @@ documents:
       soc_series_base_filter: ESP32-C3
       document_type: errata # or errata, datasheet, reference, book, guide, application note
       document_type_old_website: datasheet & errata
-      version: v1.2 # or specific version number
-      revision_date: 2025-03-18
+      version: v1.3 # or specific version number
+      revision_date: 2026-08-18
       language: en # or cn
       document_storage: docs
       document_link: https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32c3/index.html
@@ -262,8 +262,8 @@ documents:
       soc_series_base_filter: ESP32-C3
       document_type: errata # or errata, datasheet, reference, book, guide, application note
       document_type_old_website: datasheet & errata
-      version: v1.2 # or specific version number
-      revision_date: 2025-03-18 # or generate automatically?
+      version: v1.3 # or specific version number
+      revision_date: 2026-08-18 # or generate automatically?
       language: cn # or en
       document_storage: docs
       document_link: https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32c3/index.html
@@ -288,8 +288,8 @@ documents:
       soc_series_base_filter: ESP32-C6
       document_type: errata # or errata, datasheet, reference, book, guide, application note
       document_type_old_website: datasheet & errata
-      version: v1.2 # or specific version number
-      revision_date: 2025-03-19
+      version: v1.3 # or specific version number
+      revision_date: 2026-08-18
       language: en # or cn
       document_storage: docs
       document_link: https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32c6/index.html
@@ -314,8 +314,8 @@ documents:
       soc_series_base_filter: ESP32-C6
       document_type: errata # or errata, datasheet, reference, book, guide, application note
       document_type_old_website: datasheet & errata
-      version: v1.2 # or specific version number
-      revision_date: 2025-03-19 # or generate automatically?
+      version: v1.3 # or specific version number
+      revision_date: 2026-08-18 # or generate automatically?
       language: cn # or en
       document_storage: docs
       document_link: https://docs.espressif.com/projects/esp-chip-errata/zh_CN/latest/esp32c6/index.html

@@ -16,6 +16,15 @@
      - v0.3
      - v0.4
      - v1.1
+   * - RISC-V CPU
+     - CPU-863
+     - :doc:`/03-errata-description/shared/cpu-misaligned-memory-access-may-lead-to-exception`
+     - Y
+     - Y
+     - Y
+     - Y
+     - Y
+     - Y
    * - :rspan:`1` SAR ADC
      - ADC-183
      - :doc:`/03-errata-description/shared/sar-adc-adc2-not-work`
