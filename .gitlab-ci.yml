@@ -4,6 +4,7 @@ stages:
   - build
   - deploy
   - auto_trans
+  - sync
 
 variables:
   ESP_DOCS_ENV_IMAGE: "$CI_DOCKER_REGISTRY/esp-chip-errata:latest"
@@ -20,3 +21,4 @@ include:
   - local: ci/build.yml # Build docs
   - local: ci/deploy.yml # Deploy docs and publish to CDP
   - local: ci/auto_trans.yml # Auto translate docs
+  - local: ci/sync-packaging.yml # Sync chip-marking tables to esp-packaging

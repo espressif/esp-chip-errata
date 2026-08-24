@@ -1,0 +1,46 @@
+# Copy chip-marking identification tables into esp-packaging and open an MR.
+#
+# Required CI/CD variable (this project):
+#   PACKAGING_SYNC_TOKEN  Project Access Token on espressif/esp-packaging
+#                         with api + write_repository scopes.
+# Optional:
+#   PACKAGING_PROJECT_PATH          default: espressif/esp-packaging
+#   PACKAGING_TARGET_BRANCH         default: master
+#   GITLAB_URL                      default: $CI_SERVER_URL
+#   PACKAGING_MR_ASSIGNEE_EMAIL     GitLab user email for the packaging MR
+#   PACKAGING_MR_ASSIGNEE_USERNAME  GitLab username for the packaging MR
+#   SYNC_PACKAGING                  set to "true" to run the job manually
+
+sync_marking_to_packaging:
+  stage: sync
+  image: $ESP_DOCS_ENV_IMAGE
+  tags:
+    - deploy
+  needs:
+    - job: build_errata_html
+      artifacts: false
+      optional: true
+  rules:
+    - if: $SYNC_PACKAGING == "true"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      changes:
+        - docs/en/01-chip-identification/*/chip-marking-identification.rst
+        - docs/zh_CN/01-chip-identification/*/chip-marking-identification.rst
+        - tools/sync_marking_to_packaging.py
+        - ci/sync-packaging.yml
+  variables:
+    PACKAGING_PROJECT_PATH: espressif/esp-packaging
+  script:
+    - |
+      if [ -z "${PACKAGING_SYNC_TOKEN}" ]; then
+        echo "PACKAGING_SYNC_TOKEN is not set."
+        echo "Create a Project Access Token on ${PACKAGING_PROJECT_PATH}"
+        echo "(scopes: api, write_repository) and add it as a masked CI/CD variable."
+        exit 1
+      fi
+    - |
+      GITLAB_BASE="${GITLAB_URL:-$CI_SERVER_URL}"
+      CLONE_URL="${GITLAB_BASE%%://*}://oauth2:${PACKAGING_SYNC_TOKEN}@${GITLAB_BASE#*://}/${PACKAGING_PROJECT_PATH}.git"
+      GIT_TERMINAL_PROMPT=0 git clone --depth 1 "${CLONE_URL}" packaging-sync
+    - export GITLAB_URL="${GITLAB_URL:-$CI_SERVER_URL}"
+    - python3 tools/sync_marking_to_packaging.py --packaging-repo packaging-sync --push-mr
