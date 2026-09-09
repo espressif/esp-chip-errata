@@ -83,6 +83,7 @@
     .. only:: html
 
         .. include:: ./shared/cpu-load-store.rst
+        .. include:: ./shared/cpu-misaligned-memory-access-may-lead-to-exception.rst
         .. include:: ./shared/clock-rc-fast-clk-inaccurate.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/adc1-unavailable-channel-4.rst
         .. include:: ./{IDF_TARGET_PATH_NAME}/sar-adc-missing-lower-four-bits.rst
@@ -104,6 +105,7 @@
             :hidden:
 
             shared/cpu-load-store
+            shared/cpu-misaligned-memory-access-may-lead-to-exception
             shared/clock-rc-fast-clk-inaccurate
             {IDF_TARGET_PATH_NAME}/adc1-unavailable-channel-4
             {IDF_TARGET_PATH_NAME}/sar-adc-missing-lower-four-bits
