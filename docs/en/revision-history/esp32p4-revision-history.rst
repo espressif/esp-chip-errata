@@ -5,6 +5,10 @@
    * - Date
      - Version
      - Release Notes
+   * - 2026-10-12
+     - v1.4
+     -  - :doc:`/01-chip-identification/index`
+            - Added manufacturing code X ``J`` XX for chip revision v3.2 in Table "Chip Revision Identification by Chip Marking"
    * - 2026-07-10
      - v1.3
      -  - :doc:`/02-errata-summary/index`

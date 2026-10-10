@@ -5,6 +5,10 @@
    * - 日期
      - 版本
      - 发布说明
+   * - 2026-10-12
+     - v1.4
+     -  - :doc:`/01-chip-identification/index`
+            - 更新表“芯片丝印芯片版本标识”，增加芯片版本 v3.2 的生产编码 X ``J`` XX
    * - 2026-07-10
      - v1.3
      -  - :doc:`/02-errata-summary/index`
