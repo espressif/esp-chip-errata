@@ -8,7 +8,10 @@
 #   PACKAGING_TARGET_BRANCH         default: master
 #   GITLAB_URL                      default: $CI_SERVER_URL
 #   PACKAGING_MR_ASSIGNEE_EMAIL     GitLab user email for the packaging MR
-#   PACKAGING_MR_ASSIGNEE_USERNAME  GitLab username for the packaging MR
+#   PACKAGING_MR_ASSIGNEE_USERNAME  GitLab username for the packaging MR.
+#                                   Also mentioned on the errata MR when this job fails.
+#   GITLAB_MR_NOTE_TOKEN            Project access token used to post that note.
+#                                   CI_JOB_TOKEN cannot create merge request notes.
 #   SYNC_PACKAGING                  set to "true" to run the job manually
 
 sync_marking_to_packaging:
@@ -44,3 +47,8 @@ sync_marking_to_packaging:
       GIT_TERMINAL_PROMPT=0 git clone --depth 1 "${CLONE_URL}" packaging-sync
     - export GITLAB_URL="${GITLAB_URL:-$CI_SERVER_URL}"
     - python3 tools/sync_marking_to_packaging.py --packaging-repo packaging-sync --push-mr
+  after_script:
+    - |
+      if [ "$CI_JOB_STATUS" = "failed" ]; then
+        python3 tools/note_sync_failure.py
+      fi

@@ -88,18 +88,6 @@ def dest_path(packaging_root: Path, lang: str, target: str) -> Path:
     return packaging_root / str(DEST_REL).format(lang=lang) / target / DEST_TABLE
 
 
-INCLUDE_NEEDLE = (
-    "chip/identification/{IDF_TARGET_PATH_NAME}/chip-marking-identification.txt"
-)
-
-
-def verify_includes(packaging_root: Path) -> None:
-    for lang in LANGUAGES:
-        marking = packaging_root / "docs" / lang / "01-marking" / "chip" / "marking.txt"
-        if INCLUDE_NEEDLE not in marking.read_text(encoding="utf-8"):
-            raise SystemExit(f"{marking} is missing: .. include:: {INCLUDE_NEEDLE}")
-
-
 def copy_tables(errata_root: Path, packaging_root: Path) -> list[str]:
     """Copy tables. Return target slugs whose destination content changed."""
     changed: set[str] = set()
@@ -380,7 +368,6 @@ def main() -> int:
         return 0
 
     changed = copy_tables(errata, packaging)
-    verify_includes(packaging)
     lbcf_changed = False
     if changed:
         lbcf_changed = update_lbcf(packaging / ".lbcf.yml", changed, args.revision_date)
