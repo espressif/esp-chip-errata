@@ -125,6 +125,7 @@ All Errata Descriptions
 
     .. only:: html
 
+        .. include:: shared/cpu-misaligned-memory-access-may-lead-to-exception.rst
         .. include:: {IDF_TARGET_PATH_NAME}/crystal-40mhz-not-work.rst
 
     .. only:: latex
@@ -132,6 +133,7 @@ All Errata Descriptions
         .. toctree::
             :hidden:
 
+            shared/cpu-misaligned-memory-access-may-lead-to-exception
             {IDF_TARGET_PATH_NAME}/crystal-40mhz-not-work
 
 

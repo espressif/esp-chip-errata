@@ -42,6 +42,7 @@ ESP32C3_DOCS = ['01-chip-identification/esp32c3/*.rst',
 ESP32C2_DOCS = ['01-chip-identification/esp32c2/*.rst',
                 '02-errata-summary/esp32c2-errata-summary.rst',
                 '03-errata-description/esp32c2/*.rst',
+                '03-errata-description/shared/cpu-misaligned-memory-access-may-lead-to-exception.rst',
                 'revision-history/esp32c2-revision-history.rst',
                 ]
 ESP32S3_DOCS = ['01-chip-identification/esp32s3/*.rst',
