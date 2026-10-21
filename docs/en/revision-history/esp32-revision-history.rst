@@ -5,6 +5,10 @@
    * - Date
      - Version
      - Release Notes
+   * - 2026-10-21
+     - v3.1
+     - - Added Section :doc:`/03-errata-description/esp32/twai-tx-error-invalidates-next-received-data`
+       - Reordered the TWAI errata in the summary and the descriptions by errata number
    * - 2025-10-11
      - v3.0
      - Update errata titles capitalization and errata numbering

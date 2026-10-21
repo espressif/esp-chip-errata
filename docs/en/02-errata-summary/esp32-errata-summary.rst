@@ -152,20 +152,8 @@
      - Y
      - Y
      - Y
-   * - :rspan:`10` TWAI
-     - :doc:`/03-errata-description/esp32/twai-dominant-bit-not-interpreted-as-sof`
-     - Y
-     - Y
-     - Y
-     - Y
-     - Y
-   * - :doc:`/03-errata-description/esp32/twai-erroneous-message-transmits`
-     - Y
-     - Y
-     - Y
-     - Y
-     - Y
-   * - :doc:`/03-errata-description/esp32/twai-error-passive-state-not-entered`
+   * - :rspan:`11` TWAI
+     - :doc:`/03-errata-description/esp32/twai-rec-change`
      - Y
      - Y
      - Y
@@ -177,25 +165,31 @@
      - Y
      - Y
      - Y
+   * - :doc:`/03-errata-description/esp32/twai-erroneous-message-transmits`
+     - Y
+     - Y
+     - Y
+     - Y
+     - Y
+   * - :doc:`/03-errata-description/esp32/twai-transmit-interrupt-lost`
+     - Y
+     - Y
+     - Y
+     - Y
+     - Y
    * - :doc:`/03-errata-description/esp32/twai-invalid-received-data-frame`
      - Y
      - Y
      - Y
      - Y
      - Y
-   * - :doc:`/03-errata-description/esp32/twai-negative-phase-error`
+   * - :doc:`/03-errata-description/esp32/twai-dominant-bit-not-interpreted-as-sof`
      - Y
      - Y
      - Y
      - Y
      - Y
-   * - :doc:`/03-errata-description/esp32/twai-rec-change`
-     - Y
-     - Y
-     - Y
-     - Y
-     - Y
-   * - :doc:`/03-errata-description/esp32/twai-rx-fifo-overruns`
+   * - :doc:`/03-errata-description/esp32/twai-error-passive-state-not-entered`
      - Y
      - Y
      - Y
@@ -213,7 +207,19 @@
      - Y
      - Y
      - Y
-   * - :doc:`/03-errata-description/esp32/twai-transmit-interrupt-lost`
+   * - :doc:`/03-errata-description/esp32/twai-negative-phase-error`
+     - Y
+     - Y
+     - Y
+     - Y
+     - Y
+   * - :doc:`/03-errata-description/esp32/twai-rx-fifo-overruns`
+     - Y
+     - Y
+     - Y
+     - Y
+     - Y
+   * - :doc:`/03-errata-description/esp32/twai-tx-error-invalidates-next-received-data`
      - Y
      - Y
      - Y

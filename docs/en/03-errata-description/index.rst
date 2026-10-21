@@ -190,17 +190,18 @@ All Errata Descriptions
         .. include:: shared/rtc-reg-read-error-from-light-sleep.rst
         .. include:: {IDF_TARGET_PATH_NAME}/watchdog-issue-caused-by-live-lock.rst
         .. include:: {IDF_TARGET_PATH_NAME}/uart-fifo-cnt-indicates-data-length-incorrectly.rst
-        .. include:: {IDF_TARGET_PATH_NAME}/twai-dominant-bit-not-interpreted-as-sof.rst
-        .. include:: {IDF_TARGET_PATH_NAME}/twai-erroneous-message-transmits.rst
-        .. include:: {IDF_TARGET_PATH_NAME}/twai-error-passive-state-not-entered.rst
-        .. include:: {IDF_TARGET_PATH_NAME}/twai-error-status-bit-not-frozen.rst
-        .. include:: {IDF_TARGET_PATH_NAME}/twai-invalid-received-data-frame.rst
-        .. include:: {IDF_TARGET_PATH_NAME}/twai-negative-phase-error.rst
         .. include:: {IDF_TARGET_PATH_NAME}/twai-rec-change.rst
-        .. include:: {IDF_TARGET_PATH_NAME}/twai-rx-fifo-overruns.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/twai-error-status-bit-not-frozen.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/twai-erroneous-message-transmits.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/twai-transmit-interrupt-lost.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/twai-invalid-received-data-frame.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/twai-dominant-bit-not-interpreted-as-sof.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/twai-error-passive-state-not-entered.rst
         .. include:: {IDF_TARGET_PATH_NAME}/twai-suspend-transmission.rst
         .. include:: {IDF_TARGET_PATH_NAME}/twai-tec-value-not-increased.rst
-        .. include:: {IDF_TARGET_PATH_NAME}/twai-transmit-interrupt-lost.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/twai-negative-phase-error.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/twai-rx-fifo-overruns.rst
+        .. include:: {IDF_TARGET_PATH_NAME}/twai-tx-error-invalidates-next-received-data.rst
         .. include:: {IDF_TARGET_PATH_NAME}/ledc-duty-overflow-error.rst
 
     .. only:: latex
@@ -228,17 +229,18 @@ All Errata Descriptions
             shared/rtc-reg-read-error-from-light-sleep
             {IDF_TARGET_PATH_NAME}/watchdog-issue-caused-by-live-lock
             {IDF_TARGET_PATH_NAME}/uart-fifo-cnt-indicates-data-length-incorrectly
-            {IDF_TARGET_PATH_NAME}/twai-dominant-bit-not-interpreted-as-sof
-            {IDF_TARGET_PATH_NAME}/twai-erroneous-message-transmits
-            {IDF_TARGET_PATH_NAME}/twai-error-passive-state-not-entered
-            {IDF_TARGET_PATH_NAME}/twai-error-status-bit-not-frozen
-            {IDF_TARGET_PATH_NAME}/twai-invalid-received-data-frame
-            {IDF_TARGET_PATH_NAME}/twai-negative-phase-error
             {IDF_TARGET_PATH_NAME}/twai-rec-change
-            {IDF_TARGET_PATH_NAME}/twai-rx-fifo-overruns
+            {IDF_TARGET_PATH_NAME}/twai-error-status-bit-not-frozen
+            {IDF_TARGET_PATH_NAME}/twai-erroneous-message-transmits
+            {IDF_TARGET_PATH_NAME}/twai-transmit-interrupt-lost
+            {IDF_TARGET_PATH_NAME}/twai-invalid-received-data-frame
+            {IDF_TARGET_PATH_NAME}/twai-dominant-bit-not-interpreted-as-sof
+            {IDF_TARGET_PATH_NAME}/twai-error-passive-state-not-entered
             {IDF_TARGET_PATH_NAME}/twai-suspend-transmission
             {IDF_TARGET_PATH_NAME}/twai-tec-value-not-increased
-            {IDF_TARGET_PATH_NAME}/twai-transmit-interrupt-lost
+            {IDF_TARGET_PATH_NAME}/twai-negative-phase-error
+            {IDF_TARGET_PATH_NAME}/twai-rx-fifo-overruns
+            {IDF_TARGET_PATH_NAME}/twai-tx-error-invalidates-next-received-data
             {IDF_TARGET_PATH_NAME}/ledc-duty-overflow-error
 
 .. only:: esp32p4

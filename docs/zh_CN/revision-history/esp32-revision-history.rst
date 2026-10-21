@@ -5,6 +5,10 @@
    * - 日期
      - 版本
      - 发布说明
+   * - 2026-10-21
+     - v3.1
+     - - 新增章节 :doc:`/03-errata-description/esp32/twai-tx-error-invalidates-next-received-data`
+       - 按勘误编号重排汇总表和正文中的 TWAI 勘误
    * - 2025-10-11
      - v3.0
      - 更新勘误标题的大小写格式和勘误编号
