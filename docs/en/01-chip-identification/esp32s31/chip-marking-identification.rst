@@ -6,4 +6,4 @@
     * - Chip Revision
       - Manufacturing Code
     * - v0.0
-      - X ``A`` XX
+      - X ``A`` XX, X ``B`` XX
