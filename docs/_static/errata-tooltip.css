@@ -1,0 +1,51 @@
+.errata-preview-tip {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    box-sizing: border-box;
+    max-width: 720px;
+    max-height: min(70vh, 560px);
+    overflow: auto;
+    overscroll-behavior: contain;
+    margin: 0;
+    padding: 4px 16px 12px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #d6d6d6;
+    border-top: 3px solid #2980b9;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.55;
+    text-align: left;
+    white-space: normal;
+}
+
+.errata-preview-tip.visible {
+    display: block;
+}
+
+.errata-preview-tip h1 {
+    font-size: 1.05rem;
+    line-height: 1.35;
+    margin: 0.6em 0 0.4em;
+}
+
+.errata-preview-tip h2 {
+    font-size: 0.95rem;
+    margin: 0.9em 0 0.35em;
+}
+
+.errata-preview-tip p,
+.errata-preview-tip li {
+    font-size: 14px;
+}
+
+.errata-preview-tip .math {
+    overflow-x: auto;
+}
+
+.errata-preview-tip pre {
+    white-space: pre-wrap;
+}

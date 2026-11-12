@@ -30,6 +30,7 @@ extensions += ['sphinx_copybutton',
                'linuxdoc.rstFlatTable', #https://return42.github.io/linuxdoc/linuxdoc-howto/table-markup.html#flat-table
                'sphinx-tags', # Fine-tuned for this project based on https://sphinx-tags.readthedocs.io/en/latest/quickstart.html
                'sphinx_design', #https://sphinx-design.readthedocs.io/en/latest/get_started.html
+               'errata_link_tooltip', # Hover preview of the Description section on errata links
                ]
 
 ESP32C3_DOCS = ['01-chip-identification/esp32c3/*.rst',
