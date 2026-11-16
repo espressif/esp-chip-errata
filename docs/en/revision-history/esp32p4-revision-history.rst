@@ -5,6 +5,10 @@
    * - Date
      - Version
      - Release Notes
+   * - 2026-11-17
+     - v1.5
+     -  - :doc:`/03-errata-description/index`
+            - Added Section :doc:`/03-errata-description/esp32p4/gdma-axi-read-permission-registers-do-not-control-individual-peripherals`
    * - 2026-10-12
      - v1.4
      -  - :doc:`/01-chip-identification/index`

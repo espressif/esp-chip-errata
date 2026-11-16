@@ -258,6 +258,7 @@
         .. include:: esp32p4/output-regulators-cannot-generate-a-reliable-supply-when-peripheral-power-domain-is-off.rst
         .. include:: esp32p4/mem-to-mem-channel0-permission-conflict-due-to-shared-transaction-ID.rst
         .. include:: esp32p4/unauthorized-ahb-access-may-block-subsequent-psram-or-flash-transactions.rst
+        .. include:: esp32p4/gdma-axi-read-permission-registers-do-not-control-individual-peripherals.rst
         .. include:: ./shared/ecdsa-invalid-r-and-s-signature-accepted.rst
         .. include:: ./shared/ecdsa-invalid-s-signature-accepted.rst
 
@@ -277,6 +278,7 @@
             esp32p4/output-regulators-cannot-generate-a-reliable-supply-when-peripheral-power-domain-is-off
             esp32p4/mem-to-mem-channel0-permission-conflict-due-to-shared-transaction-ID
             esp32p4/unauthorized-ahb-access-may-block-subsequent-psram-or-flash-transactions
+            esp32p4/gdma-axi-read-permission-registers-do-not-control-individual-peripherals
             ./shared/ecdsa-invalid-r-and-s-signature-accepted.rst
             ./shared/ecdsa-invalid-s-signature-accepted.rst
 

@@ -102,7 +102,7 @@
      - Y
      -
      -
-   * - APM
+   * - :rspan:`1` APM
      - APM-560
      - :doc:`/03-errata-description/esp32p4/unauthorized-ahb-access-may-block-subsequent-psram-or-flash-transactions`
      - Y
@@ -111,6 +111,14 @@
      - Y
      -
      -
+   * - APM-885
+     - :doc:`/03-errata-description/esp32p4/gdma-axi-read-permission-registers-do-not-control-individual-peripherals`
+     - Y
+     - Y
+     - Y
+     - Y
+     - Y
+     - Y
    * - :rspan:`1` ECDSA_DS :sup:`1`
      - ECDSA_DS-836
      - :doc:`../03-errata-description/shared/ecdsa-invalid-r-and-s-signature-accepted`

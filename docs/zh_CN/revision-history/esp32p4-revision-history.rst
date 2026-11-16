@@ -5,6 +5,10 @@
    * - 日期
      - 版本
      - 发布说明
+   * - 2026-11-17
+     - v1.5
+     -  - :doc:`/03-errata-description/index`
+            - 新增章节 :doc:`/03-errata-description/esp32p4/gdma-axi-read-permission-registers-do-not-control-individual-peripherals`
    * - 2026-10-12
      - v1.4
      -  - :doc:`/01-chip-identification/index`
